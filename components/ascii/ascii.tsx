@@ -7,6 +7,7 @@ import { TrackballControls } from 'three/addons/controls/TrackballControls.js';
 
 
 
+
 import s from './ascii.module.scss'
 
 
@@ -26,7 +27,7 @@ export default function Ascii() {
 
         camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 1, 1000);
         camera.position.y = 150;
-        camera.position.z = 500;
+        camera.position.z = 400;
 
         scene = new THREE.Scene();
         scene.background = new THREE.Color(0, 0, 0);
@@ -42,10 +43,10 @@ export default function Ascii() {
         sphere = new THREE.Mesh(new THREE.SphereGeometry(200, 20, 10), new THREE.MeshPhongMaterial({ flatShading: true }));
         scene.add(sphere);
 
-        plane = new THREE.Mesh(new THREE.PlaneGeometry(400, 400), new THREE.MeshBasicMaterial({ color: 0xe0e0e0 }));
+        /* plane = new THREE.Mesh(new THREE.PlaneGeometry(400, 400), new THREE.MeshBasicMaterial({ color: 0xe0e0e0 }));
         plane.position.y = - 200;
         plane.rotation.x = - Math.PI / 2;
-        scene.add(plane);
+        scene.add(plane); */
 
         renderer = new THREE.WebGLRenderer();
         renderer.setSize(window.innerWidth, window.innerHeight);

@@ -3,14 +3,21 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 4rem;
 
   .intro {
     display: flex;
     width: 100%;
       .content {
         display: flex;
-        flex: 1;
+        flex-direction: column;
+        flex: 1;  
+        span {
+          color: #cc0000;
+        }
+        .events {
+          margin-top: 6rem;
+        }
       }
       .graphic {
 

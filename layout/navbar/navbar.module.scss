@@ -1,7 +1,7 @@
 .navbar {
     height: 100px;
     display: flex;
-    padding: 1rem 2rem;
+    padding: 1rem 4rem;
     align-items: center;
     .logo {
         img {
@@ -12,9 +12,8 @@
     .bu {
         margin-left: 16px;
         span {
-            //scarlet red color
-            color: #FF2400;
-        }
+            color: #cc0000;
+          }
     }
     .space {
         flex: 1;

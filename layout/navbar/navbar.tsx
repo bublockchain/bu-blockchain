@@ -3,6 +3,12 @@ import React from "react";
 import s from "./navbar.module.scss";
 import Image from "next/image";
 import Link from "next/link";
+import { Oxygen_Mono } from "next/font/google";
+
+const oxygen_mono = Oxygen_Mono({
+    subsets: ['latin'],
+    weight: '400'
+  })
 
 export default function Navbar() {
 
@@ -35,7 +41,7 @@ export default function Navbar() {
     ]
 
     return (
-        <nav className={s.navbar}>
+        <nav className={`${s.navbar} ${oxygen_mono.className}`}>
             <div className={s.logo}>
                 <Image src="/bublogo.png" alt="BU Blockchain" width={48} height={48} />
             </div>
