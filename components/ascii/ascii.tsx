@@ -5,7 +5,9 @@ import * as THREE from 'three';
 import { AsciiEffect } from 'three/addons/effects/AsciiEffect.js';
 import { TrackballControls } from 'three/addons/controls/TrackballControls.js';
 
-const inter = Inter({ subsets: ['latin'] })
+
+
+import s from './ascii.module.scss'
 
 
 export default function Ascii() {
@@ -21,9 +23,6 @@ export default function Ascii() {
         if (typeof window == 'undefined') {
             return;
         }
-
-        const width = window.innerWidth || 2;
-        const height = window.innerHeight || 2;
 
         camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 1, 1000);
         camera.position.y = 150;
@@ -83,6 +82,6 @@ export default function Ascii() {
     }, [rendered]);
 
     return (
-        <div ref={containerRef} />
+        <div ref={containerRef} className={s.ascii}/>
     )
 }

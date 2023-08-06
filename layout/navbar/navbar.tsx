@@ -39,6 +39,9 @@ export default function Navbar() {
             <div className={s.logo}>
                 <Image src="/bublogo.png" alt="BU Blockchain" width={48} height={48} />
             </div>
+            <div className={s.bu}>
+                Boston University Blockchain
+            </div>
             <div className={s.space}>
 
             </div>

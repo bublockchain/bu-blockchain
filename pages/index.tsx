@@ -25,8 +25,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${s.main} ${inter.className}`}>
-        <Ascii />
-        
+        <div className={s.intro}>
+          <div className={s.content}>
+          </div>
+
+          <div className={s.graphic}>
+            <Ascii />
+          </div>
+        </div>
       </main>
     </>
   )

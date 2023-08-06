@@ -5,9 +5,16 @@
   align-items: center;
   padding: 2rem;
 
-  .box {
-    z-index: 99;
-    height: 400px;
+  .intro {
+    display: flex;
+    width: 100%;
+      .content {
+        display: flex;
+        flex: 1;
+      }
+      .graphic {
+
+      }
   }
 }
 
