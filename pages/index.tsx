@@ -55,6 +55,7 @@ export default function Home() {
         <div className={s.intro}>
           <div className={s.content}>
             <h2><span>BU's</span> student ran blockchain and distributed technology club. supporting research & innovation in web3.0</h2>
+            <div className={s.location}>Center for Computing & Data Sciences, 665 Commonwealth Ave, Floor 2, Boston, MA 02215, USA</div>
             <div className={s.events}>
               <h3>upcoming events</h3>
 
@@ -77,6 +78,7 @@ export default function Home() {
                 })
               }
             </div>
+            
           </div>
 
           <div className={s.graphic}>
