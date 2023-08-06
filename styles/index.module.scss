@@ -19,6 +19,23 @@
         .location {
           margin-top: 1rem;
         }
+        .join {
+          width: 200px;
+          padding: 1rem 2rem;
+          border: transparent;
+          background-color: white;
+          color: #000;
+          font-size: 1rem;
+          font-weight: 600;
+          margin-top: 1rem;
+          border-radius: .6rem;
+          cursor: pointer;
+          transition: all 0.14s ease-in-out; 
+          &:hover {
+            background-color: #7851A9;
+            color: white;
+          }
+        }
         .events {
           margin-top: 4rem;
 
@@ -59,9 +76,10 @@
               button {
                 background-color: transparent;
                 border: 1px solid white;
-                border-radius: 8px;
+                border-radius: .6rem;
                 padding: 0.4rem 1rem;
                 cursor: pointer;
+                transition: all 0.14s ease-in-out; 
                 &:hover {
                   color: #7851A9;
                   background-color: #fff;
@@ -71,10 +89,39 @@
           }
 
         }
+        .partners {
+          margin-top: 4rem;
+
+          h3 {
+            font-weight: 600;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+          }
+
+          .list {
+            display: flex;
+            flex-direction: row;
+            .partner {
+              margin-right: 12px;
+              object-fit: contain;
+              height: 100px;
+              width: 140px;
+              min-width: 140px;
+              padding: 10px 20px;
+              background-color: white;
+              border-radius: .6rem;
+              img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+              }
+            }
+          }
       }
       .graphic {
 
       }
+    }
   }
 }
 

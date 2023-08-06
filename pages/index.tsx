@@ -43,19 +43,54 @@ export default function Home() {
     }
   ]
 
+  const partners = [
+    {
+      name: "hedera",
+      link: "/hedera.png"
+    },
+  /*   {
+      name: "binance",
+      link: "/binance.png",
+    }, */
+    {
+      name: "186 ventures",
+      link: "/186.png"
+    },
+    {
+      name: "circle",
+      link: "/circle.png"
+    },
+    {
+      name: "fidelity investments",
+      link: "/fidelity.png"
+    },
+    {
+      name: "chainlink",
+      link: "/chain.png"
+    },
+    {
+      name: "algorand",
+      link: "/algorand.png"
+    }
+
+  ]
+
   return (
     <>
       <Head>
         <title>BU Blockchain</title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/bublogo.png" />
       </Head>
       <main className={`${s.main} ${oxygen_mono.className}`}>
         <div className={s.intro}>
           <div className={s.content}>
             <h2><span>BU's</span> student ran blockchain and distributed technology club. supporting research & innovation in web3.0</h2>
             <div className={s.location}>Center for Computing & Data Sciences, 665 Commonwealth Ave, Floor 2, Boston, MA 02215, USA</div>
+
+            <button className={s.join}>join us</button>
+
             <div className={s.events}>
               <h3>upcoming events</h3>
 
@@ -78,7 +113,20 @@ export default function Home() {
                 })
               }
             </div>
-            
+            <div className={s.partners}>
+              <h3>our partners</h3>
+              <div className={s.list}>
+              {
+                partners.map((partner, i) => {
+                  return (
+                    <div className={s.partner} key={i}>
+                      <Image src={partner.link} alt={partner.name} width={500} height={500} />
+                    </div>
+                  )
+                })
+              }
+              </div>
+            </div>
           </div>
 
           <div className={s.graphic}>
