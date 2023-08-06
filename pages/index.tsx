@@ -22,7 +22,26 @@ const oxygen_mono = Oxygen_Mono({
 
 export default function Home() {
 
-  
+  const eventmap = [
+    {
+      name: 'first club meeting',
+      date: '09/10/2023',
+      action: 'rsvp',
+      link: 'https://www.google.com'
+    },
+    {
+      name: 'Boston Hacks',
+      date: '10/20/2023',
+      action: 'rsvp',
+      link: 'https://www.google.com'
+    },
+    {
+      name: 'BU Blockchain Gala',
+      date: '12/10/2023',
+      action: 'rsvp',
+      link: 'https://www.google.com'
+    }
+  ]
 
   return (
     <>
@@ -38,6 +57,25 @@ export default function Home() {
             <h2><span>BU's</span> student ran blockchain and distributed technology club. supporting research & innovation in web3.0</h2>
             <div className={s.events}>
               <h3>upcoming events</h3>
+
+              {
+                eventmap.map((event, i) => {
+                  return (
+                    <div className={s.event} key={i}>
+                      <div className={s.dot}>
+                        <div className={s.point}>%</div>
+                      </div>
+                      <div className={s.details}>
+                        {event.name}
+                        <div className={s.date}>{event.date}</div>
+                      </div>
+                      <div className={s.action}>
+                        <button>rsvp</button>
+                      </div>
+                    </div>
+                  )
+                })
+              }
             </div>
           </div>
 

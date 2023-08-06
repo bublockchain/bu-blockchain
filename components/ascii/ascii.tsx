@@ -27,7 +27,7 @@ export default function Ascii() {
 
         camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 1, 1000);
         camera.position.y = 150;
-        camera.position.z = 400;
+        camera.position.z = 500;
 
         scene = new THREE.Scene();
         scene.background = new THREE.Color(0, 0, 0);
@@ -52,7 +52,7 @@ export default function Ascii() {
         renderer.setSize(window.innerWidth, window.innerHeight);
 
         effect = new AsciiEffect(renderer, ' .:-+*=%@#', { invert: true });
-        effect.setSize(window.innerWidth / 2.2, window.innerHeight / 2.2);
+        effect.setSize(window.innerWidth, window.innerHeight);
         effect.domElement.style.color = 'white';
         effect.domElement.style.backgroundColor = 'black';
 
