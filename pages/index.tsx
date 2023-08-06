@@ -86,7 +86,7 @@ export default function Home() {
       <main className={`${s.main} ${oxygen_mono.className}`}>
         <div className={s.intro}>
           <div className={s.content}>
-            <h2><span>BU's</span> student ran blockchain and distributed technology club. supporting research & innovation in web3.0</h2>
+            <h2><span>BU's</span> student run blockchain and distributed technology club. supporting research & innovation in web3.0</h2>
             <div className={s.location}>Center for Computing & Data Sciences, 665 Commonwealth Ave, Floor 2, Boston, MA 02215, USA</div>
 
             <button className={s.join}>join us</button>

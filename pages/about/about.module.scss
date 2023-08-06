@@ -1,0 +1,29 @@
+.about {
+  display: flex;
+  flex-direction: column;
+
+  padding: 4rem;
+
+
+  .mission,
+  .vision,
+  .collaboration {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 40%;
+
+    span {
+      color: #cc0000;
+    }
+
+    .sub {
+      margin-top: 1rem;
+    }
+
+  }
+
+  .vision, .collaboration {
+    margin-top: 4rem;
+  }
+}
