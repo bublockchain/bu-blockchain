@@ -81,7 +81,7 @@ export default function Home() {
         <title>BU Blockchain</title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/bublogo.png" />
+        <link rel="icon" href="/bublogo.ico" />
       </Head>
       <div className={`${oxygen_mono.className}`}>
           <div className={s.content}>
