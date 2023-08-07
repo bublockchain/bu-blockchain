@@ -22,10 +22,10 @@ export default function Navbar() {
             name: "Initiatives",
             link: "/initiatives"
         },
-        {
+/*         {
             name: "Research",
             link: "/research"
-        },
+        }, */
         {
             name: "Events",
             link: "/events"

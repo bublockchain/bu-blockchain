@@ -2,7 +2,9 @@ import React from "react";
 
 import s from "./team.module.scss";
 
-export default function team() {
+import {FaLinkedin, FaTwitter} from "react-icons/fa";
+
+export default function Team() {
 
     const team = [
         {
@@ -29,6 +31,10 @@ export default function team() {
                                 <div className={s.details}>
                                     <div className={s.name}>{member.name}</div>
                                     <div className={s.title}>{member.title}</div>
+                                    <div className={s.socials}>
+                                        <FaLinkedin className={s.icon} />
+                                        <FaTwitter className={s.icon} />
+                                    </div>
                                 </div>
                             </div>
                         )

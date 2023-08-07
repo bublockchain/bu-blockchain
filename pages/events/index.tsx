@@ -1,7 +1,7 @@
 import React from "react";
 import s from "./events.module.scss";
 
-export default function Team() {
+export default function Events() {
     return (
         <div>
             tentative.

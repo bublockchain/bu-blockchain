@@ -1,0 +1,54 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    span {
+        color: #cc0000;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            padding: 1rem 1rem;
+            width: 340px;
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: .6rem;
+            margin-top: 1rem;
+        }
+
+        textarea {
+            margin-top: 1rem;
+            padding: 1rem 1rem;
+            width: 340px;
+            height: 140px;
+            max-width: 340px;
+            min-width: 340px;
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: .6rem;
+        }
+
+        button {
+            width: 340px;
+            padding: 1rem 2rem;
+            border: transparent;
+            background-color: white;
+            color: #000;
+            font-size: 1rem;
+            margin-top: 1rem;
+            border-radius: .6rem;
+            cursor: pointer;
+            transition: all 0.14s ease-in-out;
+
+            &:hover {
+                background-color: #7851A9;
+                color: white;
+            }
+        }
+    }
+
+}

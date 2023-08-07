@@ -37,6 +37,18 @@
                 color: #ffffff91;
                 margin-bottom: 0.4rem;
             }
+            .socials {
+                display: flex;
+                padding-top: .6rem;
+                .icon {
+                    font-size: 1.3rem;
+                    margin-right: 1rem;
+                    cursor: pointer;
+                    &:hover {
+
+                    }
+                }
+            }
         }
     }
 
