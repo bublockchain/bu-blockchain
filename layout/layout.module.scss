@@ -1,9 +1,10 @@
 .main {
     display: flex;
-
+    height: calc(100vh - 100px);
     .content {
-        width: 50%;
-        max-width: 50%;
+        width: 60%;
+        max-width: 60%;
         padding: 4rem;
+        overflow-y: scroll;
     }
 }
