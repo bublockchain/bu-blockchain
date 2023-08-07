@@ -83,8 +83,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/bublogo.png" />
       </Head>
-      <main className={`${s.main} ${oxygen_mono.className}`}>
-        <div className={s.intro}>
+      <div className={`${oxygen_mono.className}`}>
           <div className={s.content}>
             <h2><span>BU's</span> student run blockchain and distributed technology club. supporting research & innovation in web3.0</h2>
             <div className={s.location}>Center for Computing & Data Sciences, 665 Commonwealth Ave, Floor 2, Boston, MA 02215, USA</div>
@@ -129,11 +128,10 @@ export default function Home() {
             </div>
           </div>
 
-          <div className={s.graphic}>
+          {/* <div className={s.graphic}>
             <Ascii />
-          </div>
-        </div>
-      </main>
+          </div> */}
+      </div>
     </>
   )
 }

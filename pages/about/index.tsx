@@ -9,7 +9,7 @@ const oxygen_mono = Oxygen_Mono({
 
 export default function About() {
     return (
-        <div className={`${s.about} ${oxygen_mono.className}`}>
+        <div className={`${oxygen_mono.className}`}>
             <div className={s.mission}>
                 <h2>our mission:</h2>
                 <div className={s.sub}>we are an inclusive, multifaceted community dedicated to equal

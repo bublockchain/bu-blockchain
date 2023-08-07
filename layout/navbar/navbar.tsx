@@ -42,12 +42,12 @@ export default function Navbar() {
 
     return (
         <nav className={`${s.navbar} ${oxygen_mono.className}`}>
-            <div className={s.logo}>
+            <Link className={s.logo} href={'/'}>
                 <Image src="/bublogo.png" alt="BU Blockchain" width={48} height={48} />
-            </div>
-            <div className={s.bu}>
+            </Link>
+            <Link className={s.bu} href={'/'}>
                 Boston University Blockchain
-            </div>
+            </Link>
             <div className={s.space}>
 
             </div>
