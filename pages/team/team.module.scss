@@ -1,0 +1,43 @@
+.team {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    span {
+        color: #cc0000;
+    }
+
+    .sub {
+        margin-top: 1rem;
+    }
+
+    .member {
+        margin-top: 2rem;
+        display: flex;
+        height: 130px;
+
+        .avatar {
+            background-color: white;
+            border-radius: .6rem;
+            width: 130px;
+            height: 100%;
+        }
+        .details {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            padding: 1rem 1rem;
+            .name {
+                font-weight: 600;
+                font-size: 1.3rem;
+                margin-bottom: .4rem;
+            }
+            .title {
+                font-weight: 400;
+                color: #ffffff91;
+                margin-bottom: 0.4rem;
+            }
+        }
+    }
+
+}
