@@ -9,6 +9,7 @@ import * as THREE from 'three';
 import { AsciiEffect } from 'three/addons/effects/AsciiEffect.js';
 import { TrackballControls } from 'three/addons/controls/TrackballControls.js';
 import Ascii from '@/components/ascii/ascii';
+import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] })
 const roboto = Roboto({
@@ -88,7 +89,7 @@ export default function Home() {
             <h2><span>BU's</span> student run blockchain and distributed technology club. supporting research & innovation in web3.0</h2>
             <div className={s.location}>Center for Computing & Data Sciences, 665 Commonwealth Ave, Floor 2, Boston, MA 02215, USA</div>
 
-            <button className={s.join}>join us</button>
+            <Link href="https://lu.ma/vhseoio4"><button className={s.join}>join us</button></Link>
 
             <div className={s.events}>
               <h3>upcoming events</h3>
@@ -105,7 +106,7 @@ export default function Home() {
                         <div className={s.date}>{event.date}</div>
                       </div>
                       <div className={s.action}>
-                        <button>rsvp</button>
+                        <Link href={event.link}><button>rsvp</button></Link>
                       </div>
                     </div>
                   )
