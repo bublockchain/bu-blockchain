@@ -1,6 +1,8 @@
 .content {
   display: flex;
   flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
   flex: 1;
 
   span {
@@ -120,6 +122,18 @@
           object-fit: contain;
         }
       }
+    }
+
+    @media screen and (max-width: 870px) {
+
+    }
+  }
+
+
+
+  @media screen and (max-width: 870px) {
+    h2 {
+      font-size: 1.3rem;
     }
   }
 }

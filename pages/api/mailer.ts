@@ -8,6 +8,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === 'POST') {
         const { name, email, subject, message } = req.body
         console.log(process.env.EMAIL)
+        console.log(process.env.PASSWORD)
         console.log(req.body)
 
         const transporter = nodemailer.createTransport({
@@ -21,12 +22,16 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         })
 
         const mailData = {
-            from: "saad7@bu.edu",
-            to: "saad7@bu.edu",
-            subject: `Message From ${name}`,
+            from: "BOSTONUNIVERSITYBLOCKCHAIN@GMAIL.COM",
+            to: process.env.TO_EMAIL,
+            subject: `bubmsg | ${subject}`,
             text: message + ' | Sent from: ' + email,
-            html: `<div>${message}</div><p>Sent from:
-        ${email}</p>`,
+            html: 
+                ` 
+                    <div>${message}</div>
+                    <br>
+                    <div>Sent from:${email}</div>
+                `,
         }
 
         transporter.sendMail(mailData, function (err, info) {
