@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import s from "./contact.module.scss";
-import useContactForm from "./useContactForm";
+import useContactForm from "../../util/useContactForm";
 
 export default function Contact() {
 
