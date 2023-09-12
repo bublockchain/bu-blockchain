@@ -16,6 +16,46 @@ export default function Team() {
             name: "Alysa Zhao",
             title: "Vice President",
             avatar: "/alysa.png"
+        },
+        {
+            name: "Daniel Lung",
+            title: "VP of administration",
+            avatar: "/daniel.png" 
+        },
+        {
+            name: "Sachin Thapa",
+            title: "VP of finance",
+            avatar: "/sachin.png"
+        },
+        {
+            name: " Saad N.",
+            title: "VP of technology",
+            avatar: "/saad.png"
+        },
+        {
+            name: "Noah Kim",
+            title: "VP of design",
+            avatar: "/noah.png"
+        },
+        {
+            name: "Salem Gebru",
+            title: "VP of marketing",
+            avatar: "/salem.png"
+        },
+        {
+            name: "Melanie Lin",
+            title: "VP of sustainability",
+            avatar: "/melanie.png"
+        },
+        {
+            name: "Sahir Doshi",
+            title: "Advisor",
+            avatar: "/sahir.png"
+        },
+        {
+            name: "Cameron Asadi",
+            title: "Advisor",
+            avatar: "/cameron.png"
         }
     ]
 
