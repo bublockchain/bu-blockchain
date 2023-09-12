@@ -49,14 +49,18 @@ export default function Home() {
       name: "hedera",
       link: "/hedera.png"
     },
-  /*   {
-      name: "binance",
-      link: "/binance.png",
-    }, */
     {
+      name: "bnb chain",
+      link: "/bnbchain.jpg",
+    },
+    {
+      name: "near foundation",
+      link: "/near.jpeg"
+    },
+/*     {
       name: "186 ventures",
       link: "/186.png"
-    },
+    }, */
     {
       name: "circle",
       link: "/circle.png"
@@ -69,10 +73,10 @@ export default function Home() {
       name: "chainlink",
       link: "/chain.png"
     },
-    {
+/*     {
       name: "algorand",
       link: "/algorand.png"
-    }
+    } */
 
   ]
 
