@@ -27,20 +27,20 @@ export default function Home() {
       name: 'first club meeting',
       date: '09/10/2023',
       action: 'rsvp',
-      link: 'https://www.google.com'
+      link: 'https://lu.ma/vhseoio4'
     },
     {
       name: 'Boston Hacks',
       date: '10/20/2023',
       action: 'rsvp',
-      link: 'https://www.google.com'
+      link: 'https://bostonhacks.io/'
     },
-    {
+/*     {
       name: 'BU Blockchain Gala',
       date: '12/10/2023',
       action: 'rsvp',
       link: 'https://www.google.com'
-    }
+    } */
   ]
 
   const partners = [
