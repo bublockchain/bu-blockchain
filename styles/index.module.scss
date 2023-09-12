@@ -101,8 +101,10 @@
     .list {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
 
       .partner {
+        margin-bottom: 12px;
         margin-right: 12px;
         object-fit: contain;
         height: 80px;

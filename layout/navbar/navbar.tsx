@@ -62,6 +62,13 @@ export default function Navbar() {
                     })
                 }
             </div>
+            <div className={s.mobile}>
+                <div className={s.hamburger}>
+                    <div className={s.bar}></div>
+                    <div className={s.bar}></div>
+                    <div className={s.bar}></div>
+                </div>
+            </div>
         </nav>
     )
 }

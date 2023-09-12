@@ -29,4 +29,29 @@
             }
         }
     }
+    .mobile {
+        display: none;
+        cursor: pointer;
+        .hamburger {
+            width: 38px;
+            height: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .bar {
+                width: 100%;
+                height: 4px;
+                background-color: #fff;
+            }
+        }
+    }
+
+    @media screen and (max-width: 870px) {
+        .links {
+            display: none;
+        }
+        .mobile {
+            display: block;
+        }
+    }
 }
