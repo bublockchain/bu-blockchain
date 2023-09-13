@@ -21,7 +21,7 @@ export default function Events() {
         },
         {
             name: "Boston Hacks",
-            desc: "",
+            desc: "Bostons biggest hackathon",
             date: "10/20/2023",
             action: "rsvp",
             link: "https://bostonhacks.io/"
