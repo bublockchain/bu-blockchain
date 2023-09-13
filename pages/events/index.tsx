@@ -15,7 +15,7 @@ export default function Events() {
         {
             name: "Vechain x EasyA Hackathon",
             desc: "Early Access!",
-            data: "10/07/2023",
+            date: "10/07/2023",
             action: "rsvp",
             link: "https://www.eventbrite.co.uk/e/vechain-x-easya-hackathon-early-access-7-8-october-win-30000-tickets-705875361207?aff=oddtdtcreator"
         },
