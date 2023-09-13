@@ -13,7 +13,7 @@ export default function Events() {
             link: "https://lu.ma/vhseoio4"
         },
         {
-            name: "Vechain x EasyA Hackathon",
+            name: "Vechain x EasyA hackathon",
             desc: "Early Access!",
             date: "10/07/2023",
             action: "rsvp",
