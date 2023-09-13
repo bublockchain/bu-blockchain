@@ -67,14 +67,14 @@ export default function Team() {
                     team.map((member, i) => {
                         return (
                             <div className={s.member}>
-                                <div className={s.avatar}></div>
+                                {/* <div className={s.avatar}></div> */}
                                 <div className={s.details}>
                                     <div className={s.name}>{member.name}</div>
                                     <div className={s.title}>{member.title}</div>
-                                    <div className={s.socials}>
+                                    {/* <div className={s.socials}>
                                         <FaLinkedin className={s.icon} />
                                         <FaTwitter className={s.icon} />
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         )
