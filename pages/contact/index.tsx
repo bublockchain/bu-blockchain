@@ -43,7 +43,13 @@ export default function Contact() {
                         isSuccessful: false,
                         message: '',
                     });
-                });
+                }, 3000);
+
+                // clear form
+                handleChange({ target: { id: 'email', value: '' } });
+                handleChange({ target: { id: 'subject', value: '' } });
+                handleChange({ target: { id: 'message', value: '' } });
+                handleChange({ target: { id: 'name', value: '' } });
             }
         } catch (e) {
             console.log(e);
@@ -56,7 +62,7 @@ export default function Contact() {
                     isSuccessful: false,
                     message: '',
                 });
-            });
+            }, 3000);
         }
     }
 
