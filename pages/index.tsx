@@ -31,6 +31,12 @@ export default function Home() {
       link: 'https://lu.ma/vhseoio4'
     },
     {
+      name: "Vechain x EasyA Hackathon",
+      data: "10/07/2023",
+      action: "rsvp",
+      link: "https://www.eventbrite.co.uk/e/vechain-x-easya-hackathon-early-access-7-8-october-win-30000-tickets-705875361207?aff=oddtdtcreator"
+    },
+    {
       name: 'Boston Hacks',
       date: '10/20/2023',
       action: 'rsvp',

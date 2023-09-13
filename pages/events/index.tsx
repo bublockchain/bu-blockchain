@@ -13,12 +13,19 @@ export default function Events() {
             link: "https://lu.ma/vhseoio4"
         },
         {
+            name: "Vechain x EasyA Hackathon",
+            data: "10/07/2023",
+            action: "rsvp",
+            link: "https://www.eventbrite.co.uk/e/vechain-x-easya-hackathon-early-access-7-8-october-win-30000-tickets-705875361207?aff=oddtdtcreator"
+        },
+        {
             name: "Boston Hacks",
             desc: "come learn all about BU Blockchain!",
             date: "10/20/2023",
             action: "rsvp",
             link: "https://bostonhacks.io/"
-        }
+        },
+
     ]
 
     return (
