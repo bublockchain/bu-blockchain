@@ -16,7 +16,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
             host: 'smtp.gmail.com',
             auth: {
                 user: process.env.EMAIL,
-                pass: process.env.PASSWORD,
+                pass: process.env.APP_PASSWORD,
             },
             secure: true,
         })
@@ -25,18 +25,24 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
             from: "BOSTONUNIVERSITYBLOCKCHAIN@GMAIL.COM",
             to: process.env.TO_EMAIL,
             subject: `bubmsg | ${subject}`,
-            text: message + ' | Sent from: ' + email,
+            text: message + ' | from: ' + name + " | " + email,
             html: 
                 ` 
                     <div>${message}</div>
                     <br>
-                    <div>Sent from:${email}</div>
+                    <div>From: ${name} | ${email}</div>
                 `,
         }
 
         transporter.sendMail(mailData, function (err, info) {
-            if (err) console.log(err)
-            else console.log(info)
+            if (err) {
+                console.log(err)
+                res.status(500).send('Something went wrong.')
+            }
+            else {
+                console.log(info)
+                res.status(200).send('Thank you for your message. We will get back to you soon.')
+            }
         })
     }
 

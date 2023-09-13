@@ -32,15 +32,30 @@ export default function Contact() {
                 values.message,
                 values.name,
             );
-            if (req && req.status === 250) {
-                setResponseMessage(
-                    { isSuccessful: true, message: 'Thank you for your message.' });
+            if (req && req.status < 400) {
+                // show response message for 3 seconds
+                setResponseMessage({
+                    isSuccessful: true,
+                    message: 'Your message has been sent. Thank you!',
+                });
+                setTimeout(() => {
+                    setResponseMessage({
+                        isSuccessful: false,
+                        message: '',
+                    });
+                });
             }
         } catch (e) {
             console.log(e);
             setResponseMessage({
                 isSuccessful: false,
                 message: 'Oops something went wrong. Please try again.',
+            });
+            setTimeout(() => {
+                setResponseMessage({
+                    isSuccessful: false,
+                    message: '',
+                });
             });
         }
     }
@@ -85,6 +100,13 @@ export default function Contact() {
                     ></textarea>
                     <button>submit</button>
                 </form>
+
+                {
+                    responseMessage.message !== '' && 
+                    <div className={`${s.response} ${responseMessage.isSuccessful ? s.success : s.failure}`}>
+                        {responseMessage.message}
+                    </div>
+                }
             </div>
         </div>
     )

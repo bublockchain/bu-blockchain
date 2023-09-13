@@ -51,4 +51,16 @@
         }
     }
 
+    .response {
+        font-size: 14px;
+        margin-top: 1rem;
+    }
+
+    .success {
+        color: #00cc00;
+    }
+    .failure {
+        color: #cc0000;
+    }
+
 }
