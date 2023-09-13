@@ -3,12 +3,25 @@
     flex-direction: column;
     flex: 1;
 
+    margin-top: 4rem;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
     span {
         color: #cc0000;
     }
 
     .sub {
         margin-top: 1rem;
+    }
+
+    .date {
+        margin-top: .6rem;
+        font-weight: 400;
+        color: #ffffff91;
+        margin-bottom: 0.5rem;
     }
 
     button {
