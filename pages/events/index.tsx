@@ -9,8 +9,8 @@ export default function Events() {
             name: "club meeting - blockchain 101",
             desc: "CDS B62, 7-8 PM",
             date: "09/20/2023",
-            action: "rsvp",
-            link: ""
+/*             action: "rsvp",
+            link: "" */
         },
         {
             name: "Vechain x EasyA hackathon",
@@ -37,7 +37,9 @@ export default function Events() {
                         <h2>{event.name}</h2>
                         <div className={s.sub}>{event.desc}</div>
                         <div className={s.date}>{event.date}</div>
-                        <Link href={event.link}><button>{event.action}</button></Link>
+                        {
+                            event.action && <Link href={event.link}><button>{event.action}</button></Link>
+                        }
                     </div>
                 ))
             }
