@@ -6,11 +6,11 @@ export default function Events() {
 
     const events = [
         {
-            name: "first club meeting",
-            desc: "come learn all about BU Blockchain!",
-            date: "09/13/2023",
+            name: "club meeting - blockchain 101",
+            desc: "CDS B62, 7-8 PM",
+            date: "09/20/2023",
             action: "rsvp",
-            link: "https://lu.ma/vhseoio4"
+            link: ""
         },
         {
             name: "Vechain x EasyA hackathon",

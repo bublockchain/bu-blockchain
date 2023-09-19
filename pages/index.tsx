@@ -25,8 +25,8 @@ export default function Home() {
 
   const eventmap = [
     {
-      name: 'first club meeting',
-      date: '09/13/2023',
+      name: 'blockchain 101',
+      date: '09/20/2023 CDSB62 7-8p',
       action: 'rsvp',
       link: 'https://lu.ma/vhseoio4'
     },
