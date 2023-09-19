@@ -27,8 +27,8 @@ export default function Home() {
     {
       name: 'blockchain 101',
       date: '09/20/2023 CDSB62 7-8p',
-      action: 'rsvp',
-      link: 'https://lu.ma/vhseoio4'
+/*       action: 'rsvp',
+      link: 'https://lu.ma/vhseoio4' */
     },
     {
       name: "Vechain x EasyA Hacks",
@@ -116,7 +116,9 @@ export default function Home() {
                         <div className={s.date}>{event.date}</div>
                       </div>
                       <div className={s.action}>
-                        <Link href={event.link}><button>rsvp</button></Link>
+                        {
+                          event.link && <Link href={event.link}><button>rsvp</button></Link>
+                        }
                       </div>
                     </div>
                   )
