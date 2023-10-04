@@ -38,7 +38,7 @@ export default function Home() {
     },
     {
       name: 'Boston Hacks',
-      date: '10/20/2023',
+      date: '11/18/2023',
       action: 'rsvp',
       link: 'https://bostonhacks.io/'
     },
