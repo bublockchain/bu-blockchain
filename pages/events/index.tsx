@@ -6,9 +6,9 @@ export default function Events() {
 
     const events = [
         {
-            name: "club meeting - blockchain 101",
+            name: "Polygon Workshop",
             desc: "CDS B62, 7-8 PM",
-            date: "09/20/2023",
+            date: "10/04/2023",
 /*             action: "rsvp",
             link: "" */
         },

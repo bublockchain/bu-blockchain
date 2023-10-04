@@ -25,11 +25,11 @@ export default function Home() {
 
   const eventmap = [
     {
-      name: 'blockchain 101',
-      date: '09/20/2023 CDSB62 7-8p',
-/*       action: 'rsvp',
-      link: 'https://lu.ma/vhseoio4' */
-    },
+      name: "Polygon Workshop",
+      date: "10/04/2023",
+/*             action: "rsvp",
+      link: "" */
+  },
     {
       name: "Vechain x EasyA Hacks",
       date: "10/07/2023",
