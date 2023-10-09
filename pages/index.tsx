@@ -25,11 +25,7 @@ export default function Home() {
 
   const eventmap = [
     {
-      name: "Polygon Workshop",
-      date: "10/04/23",
-    },
-    {
-      name: "David Berlind, Blockchain Journal",
+      name: "David Berlind, Editor-in-Chief at Blockchain Journal",
       date: "10/11/23 - CDS B62",
     },
     {
