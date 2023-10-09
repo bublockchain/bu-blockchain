@@ -17,12 +17,17 @@ export default function Events() {
 
         },
         {
+            name: "Smart Contract Workshop",
+            desc: "Where code meets the blockchain",
+            date: "10/17/23 - CDS B62",
+        },
+/*         {
             name: "Vechain x EasyA hackathon",
             desc: "Early Access!",
             date: "10/07/2023",
             action: "rsvp",
             link: "https://www.eventbrite.co.uk/e/vechain-x-easya-hackathon-early-access-7-8-october-win-30000-tickets-705875361207?aff=oddtdtcreator"
-        },
+        }, */
         {
             name: "Boston Hacks",
             desc: "Bostons biggest hackathon",

@@ -25,14 +25,18 @@ export default function Home() {
 
   const eventmap = [
     {
-      name: "David Berlind, Editor-in-Chief at Blockchain Journal",
-      date: "10/11/23 - CDS B62",
-    },
-    {
       name: "Vechain x EasyA Hacks",
       date: "10/07/23",
       action: "rsvp",
       link: "https://www.eventbrite.co.uk/e/vechain-x-easya-hackathon-early-access-7-8-october-win-30000-tickets-705875361207?aff=oddtdtcreator"
+    },
+    {
+      name: "David Berlind, Editor-in-Chief at Blockchain Journal",
+      date: "10/11/23 - CDS B62",
+    },
+    {
+      name: "Smart Contract Workshop",
+      date: "10/17/23 - CDS B62",
     },
     {
       name: 'Boston Hacks',
