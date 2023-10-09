@@ -13,6 +13,12 @@ export default function Events() {
             link: "" */
         },
         {
+            name: "David Berlind, Editor-in-Chief at Blockchain Journal",
+            desc: "Food and merch provided!",
+            date: "10/11/2023 - CDS B62, 7-8 PM",
+
+        },
+        {
             name: "Vechain x EasyA hackathon",
             desc: "Early Access!",
             date: "10/07/2023",

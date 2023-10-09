@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter, Roboto, Oxygen_Mono} from 'next/font/google'
+import { Inter, Roboto, Oxygen_Mono } from 'next/font/google'
 // add helvetica neue
 import s from '@/styles/index.module.scss'
 import React, { useRef, useEffect } from 'react';
@@ -26,28 +26,30 @@ export default function Home() {
   const eventmap = [
     {
       name: "Polygon Workshop",
-      date: "10/04/2023",
-/*             action: "rsvp",
-      link: "" */
-  },
+      date: "10/04/23",
+    },
+    {
+      name: "David Berlind, Blockchain Journal",
+      date: "10/11/23 - CDS B62",
+    },
     {
       name: "Vechain x EasyA Hacks",
-      date: "10/07/2023",
+      date: "10/07/23",
       action: "rsvp",
       link: "https://www.eventbrite.co.uk/e/vechain-x-easya-hackathon-early-access-7-8-october-win-30000-tickets-705875361207?aff=oddtdtcreator"
     },
     {
       name: 'Boston Hacks',
-      date: '11/18/2023',
+      date: '11/18/23',
       action: 'rsvp',
       link: 'https://bostonhacks.io/'
     },
-/*     {
-      name: 'BU Blockchain Gala',
-      date: '12/10/2023',
-      action: 'rsvp',
-      link: 'https://www.google.com'
-    } */
+    /*     {
+          name: 'BU Blockchain Gala',
+          date: '12/10/2023',
+          action: 'rsvp',
+          link: 'https://www.google.com'
+        } */
   ]
 
   const partners = [
@@ -63,10 +65,10 @@ export default function Home() {
       name: "near foundation",
       link: "/near.jpeg"
     },
-/*     {
-      name: "186 ventures",
-      link: "/186.png"
-    }, */
+    /*     {
+          name: "186 ventures",
+          link: "/186.png"
+        }, */
     {
       name: "circle",
       link: "/circle.png"
@@ -79,10 +81,10 @@ export default function Home() {
       name: "chainlink",
       link: "/chain.png"
     },
-/*     {
-      name: "algorand",
-      link: "/algorand.png"
-    } */
+    /*     {
+          name: "algorand",
+          link: "/algorand.png"
+        } */
 
   ]
 
@@ -95,39 +97,39 @@ export default function Home() {
         <link rel="icon" href="/bublogo.ico" />
       </Head>
       <div className={`${oxygen_mono.className}`}>
-          <div className={s.content}>
-            <h2><span>BU's</span> student run blockchain and distributed technology club. supporting research & innovation in web3.0</h2>
-            <div className={s.location}>Center for Computing & Data Sciences, 665 Commonwealth Ave, Floor 2, Boston, MA 02215, USA</div>
+        <div className={s.content}>
+          <h2><span>BU's</span> student run blockchain and distributed technology club. supporting research & innovation in web3.0</h2>
+          <div className={s.location}>Center for Computing & Data Sciences, 665 Commonwealth Ave, Floor 2, Boston, MA 02215, USA</div>
 
-            <Link href="https://lu.ma/vhseoio4"><button className={s.join}>join us</button></Link>
+          <Link href="https://lu.ma/vhseoio4"><button className={s.join}>join us</button></Link>
 
-            <div className={s.events}>
-              <h3>upcoming events</h3>
+          <div className={s.events}>
+            <h3>upcoming events</h3>
 
-              {
-                eventmap.map((event, i) => {
-                  return (
-                    <div className={s.event} key={i}>
-                      <div className={s.dot}>
-                        <div className={s.point}>%</div>
-                      </div>
-                      <div className={s.details}>
-                        {event.name}
-                        <div className={s.date}>{event.date}</div>
-                      </div>
-                      <div className={s.action}>
-                        {
-                          event.link && <Link href={event.link}><button>rsvp</button></Link>
-                        }
-                      </div>
+            {
+              eventmap.map((event, i) => {
+                return (
+                  <div className={s.event} key={i}>
+                    <div className={s.dot}>
+                      <div className={s.point}>%</div>
                     </div>
-                  )
-                })
-              }
-            </div>
-            <div className={s.partners}>
-              <h3>our partners</h3>
-              <div className={s.list}>
+                    <div className={s.details}>
+                      {event.name}
+                      <div className={s.date}>{event.date}</div>
+                    </div>
+                    <div className={s.action}>
+                      {
+                        event.link && <Link href={event.link}><button>rsvp</button></Link>
+                      }
+                    </div>
+                  </div>
+                )
+              })
+            }
+          </div>
+          <div className={s.partners}>
+            <h3>our partners</h3>
+            <div className={s.list}>
               {
                 partners.map((partner, i) => {
                   return (
@@ -137,11 +139,11 @@ export default function Home() {
                   )
                 })
               }
-              </div>
             </div>
           </div>
+        </div>
 
-          {/* <div className={s.graphic}>
+        {/* <div className={s.graphic}>
             <Ascii />
           </div> */}
       </div>
