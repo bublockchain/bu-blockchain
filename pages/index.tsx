@@ -38,7 +38,7 @@ export default function Home() {
     },
     {
       name: "Smart Contract Workshop",
-      date: "10/17/23 - CDS B62",
+      date: "10/17/23 - 125 Western Ave",
       action: "rsvp",
       link: "https://partiful.com/e/szjckyqsxQPTbtgOAst7"
     },
