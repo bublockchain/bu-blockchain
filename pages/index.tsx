@@ -33,10 +33,14 @@ export default function Home() {
     {
       name: "David Berlind, Editor-in-Chief at Blockchain Journal",
       date: "10/11/23 - CDS B62",
+      action: "rsvp",
+      link: "https://lu.ma/vixvzd99"
     },
     {
       name: "Smart Contract Workshop",
       date: "10/17/23 - CDS B62",
+      action: "rsvp",
+      link: "https://partiful.com/e/szjckyqsxQPTbtgOAst7"
     },
     {
       name: 'Boston Hacks',

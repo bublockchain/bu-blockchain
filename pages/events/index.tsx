@@ -14,12 +14,16 @@ export default function Events() {
             name: "David Berlind, Editor-in-Chief at Blockchain Journal",
             desc: "Food and merch provided!",
             date: "10/11/2023 - CDS B62, 7-8 PM",
+            action: "rsvp",
+            link: "https://lu.ma/vixvzd99"
 
         },
         {
             name: "Smart Contract Workshop",
             desc: "Where code meets the blockchain",
             date: "10/17/23 - CDS B62",
+            action: "rsvp",
+            link: "https://partiful.com/e/szjckyqsxQPTbtgOAst7"
         },
 /*         {
             name: "Vechain x EasyA hackathon",
