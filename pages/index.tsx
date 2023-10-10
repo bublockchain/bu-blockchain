@@ -31,7 +31,7 @@ export default function Home() {
       link: "https://www.eventbrite.co.uk/e/vechain-x-easya-hackathon-early-access-7-8-october-win-30000-tickets-705875361207?aff=oddtdtcreator"
     }, */
     {
-      name: "David Berlind, Editor-in-Chief at Blockchain Journal",
+      name: "David Berlind, Editor in Chief at Blockchain Journal",
       date: "10/11/23 - CDS B62",
       action: "rsvp",
       link: "https://lu.ma/vixvzd99"
