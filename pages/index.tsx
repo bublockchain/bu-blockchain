@@ -24,6 +24,18 @@ const oxygen_mono = Oxygen_Mono({
 export default function Home() {
 
   const eventmap = [
+    {
+      name: "Web3 Portfolio Workshop",
+      date: "10/25/23",
+      action: "rsvp",
+      link: "https://lu.ma/sj054m3f"
+    },
+    {
+      name: "BUB: Boba, Friends, Crypto Fireside",
+      date: "11/01/23",
+      action: "rsvp",
+      link: "https://lu.ma/ifykxd2g"
+    },
 /*     {
       name: "Vechain x EasyA Hacks",
       date: "10/07/23",

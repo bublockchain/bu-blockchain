@@ -5,26 +5,40 @@ import Link from "next/link";
 export default function Events() {
 
     const events = [
+        {
+            name: "Web3 Portfolio Workshop",
+            desc: "Learn how to build a web3 portfolio",
+            date: "10/25/23",
+            action: "rsvp",
+            link: "https://lu.ma/sj054m3f"
+          },
+          {
+            name: "BUB: Boba, Friends, Crypto Fireside",
+            desc: "yum!",
+            date: "11/01/23",
+            action: "rsvp",
+            link: "https://lu.ma/ifykxd2g"
+          },
 /*         {
             name: "Polygon Workshop",
             desc: "CDS B62, 7-8 PM",
             date: "10/04/2023",
         }, */
-        {
+/*         {
             name: "David Berlind, Editor-in-Chief at Blockchain Journal",
             desc: "Food and merch provided!",
             date: "10/11/2023 - CDS B62, 7-8 PM",
             action: "rsvp",
             link: "https://lu.ma/vixvzd99"
 
-        },
-        {
+        }, */
+/*         {
             name: "Smart Contract Workshop",
             desc: "Where code meets the blockchain",
             date: "10/17/23 - 125 Western Ave",
             action: "rsvp",
             link: "https://partiful.com/e/szjckyqsxQPTbtgOAst7"
-        },
+        }, */
 /*         {
             name: "Vechain x EasyA hackathon",
             desc: "Early Access!",
