@@ -33,7 +33,7 @@ export default function Team() {
             avatar: "/saad.png"
         },
         {
-            name: "Wes G.",
+            name: "Wes A. Jorgensen",
             title: "VP of innovation",
             avatar: "/wes.png"
         },
@@ -72,7 +72,7 @@ export default function Team() {
     return (
         <div>
             <div className={s.team}>
-                <h2>our team:</h2>
+{/*                 <h2>our team:</h2> */}
                 {
                     team.map((member, i) => {
                         return (
