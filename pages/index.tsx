@@ -30,7 +30,7 @@ export default function Home() {
       action: "rsvp",
       link: "https://www.eventbrite.co.uk/e/vechain-x-easya-hackathon-early-access-7-8-october-win-30000-tickets-705875361207?aff=oddtdtcreator"
     }, */
-    {
+/*     {
       name: "David Berlind, Editor in Chief at Blockchain Journal",
       date: "10/11/23 - CDS B62",
       action: "rsvp",
@@ -41,7 +41,7 @@ export default function Home() {
       date: "10/17/23 - 125 Western Ave",
       action: "rsvp",
       link: "https://partiful.com/e/szjckyqsxQPTbtgOAst7"
-    },
+    }, */
     {
       name: 'Boston Hacks',
       date: '11/18/23',
