@@ -28,23 +28,33 @@ export default function Team() {
             avatar: "/sachin.png"
         },
         {
-            name: " Saad N.",
+            name: "Saad N.",
             title: "VP of technology",
             avatar: "/saad.png"
         },
         {
+            name: "Wes G.",
+            title: "VP of innovation",
+            avatar: "/wes.png"
+        },
+        {
+            name: "Akemi & Melissa",
+            title: "CO-VPs of social events",
+            avatar: ""
+        },
+        {
             name: "Noah Kim",
-            title: "VP of design",
+            title: "Director of design",
             avatar: "/noah.png"
         },
         {
             name: "Salem Gebru",
-            title: "VP of marketing",
+            title: "Director of marketing",
             avatar: "/salem.png"
         },
         {
-            name: "Melanie Lin",
-            title: "VP of sustainability",
+            name: "Dana",
+            title: "Director of outreach", 
             avatar: "/melanie.png"
         },
         {
