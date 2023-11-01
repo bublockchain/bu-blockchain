@@ -32,8 +32,8 @@ export default function Initiatives() {
                     participation through ideathons held jointly by hackathons.</div>
             </div>
             <div className={s.town}>
-                <h2>Co-Innovation and
-                    Collaboration:</h2>
+                <h2>co-innovation and
+                    collaboration:</h2>
                 <div className={s.sub}>Ability to collaborate with
                     students and on research,
                     insights and fostering
@@ -43,8 +43,8 @@ export default function Initiatives() {
                     beneficial outcomes.</div>
             </div>
             <div className={s.town}>
-                <h2>Recruitment and Talent
-                    Acquisition:</h2>
+                <h2>recruitment and talent
+                    acquisition:</h2>
                 <div className={s.sub}>Ability to connect with our talent
                     pool & receive resumes for any
                     work opportunity as well as to
@@ -52,8 +52,8 @@ export default function Initiatives() {
                     initiative, open or closed-source.</div>
             </div>
             <div className={s.town}>
-                <h2>Product Development and
-                    Brand Exposure</h2>
+                <h2>product development and
+                    brand exposure</h2>
                 <div className={s.sub}>Provides opportunity to test
                     solutions and gain student
                     insight, while also enhancing
@@ -63,7 +63,7 @@ export default function Initiatives() {
                     university engagement.</div>
             </div>
             <div className={s.town}>
-                <h2>Club Ethos</h2>
+                <h2>club ethos</h2>
                 <div className={s.sub}>
                     we see a future where financial, economic, and social justice are all at
                     the forefront of our global society. We see a future where, regardless of
