@@ -5,54 +5,68 @@ import Link from "next/link";
 export default function Events() {
 
     const events = [
+        /*         {
+                    name: "Web3 Portfolio Workshop",
+                    desc: "Learn how to build a web3 portfolio",
+                    date: "10/25/23",
+                    action: "rsvp",
+                    link: "https://lu.ma/sj054m3f"
+                  }, */
         {
-            name: "Web3 Portfolio Workshop",
-            desc: "Learn how to build a web3 portfolio",
-            date: "10/25/23",
-            action: "rsvp",
-            link: "https://lu.ma/sj054m3f"
-          },
-          {
             name: "BUB: Boba, Friends, Crypto Fireside",
-            desc: "yum!",
+            desc: "Share a cup of boba with BU Blockchain while we announce our brand-new initiatives and do a “Why Web3” workshop! RSVP required for boba. ",
             date: "11/01/23",
             action: "rsvp",
             link: "https://lu.ma/ifykxd2g"
-          },
-/*         {
-            name: "Polygon Workshop",
-            desc: "CDS B62, 7-8 PM",
-            date: "10/04/2023",
-        }, */
-/*         {
-            name: "David Berlind, Editor-in-Chief at Blockchain Journal",
-            desc: "Food and merch provided!",
-            date: "10/11/2023 - CDS B62, 7-8 PM",
+        },
+        {
+            name: "BU Blockchain x Fidelity",
+            desc: "Join BU Blockchain and Fidelity to talk about the intersection between tradfi and the web3 space",
+            date: "11/08/23",
             action: "rsvp",
-            link: "https://lu.ma/vixvzd99"
-
-        }, */
-/*         {
-            name: "Smart Contract Workshop",
-            desc: "Where code meets the blockchain",
-            date: "10/17/23 - 125 Western Ave",
+            link: "https://lu.ma/b2y5d5jn"
+        },
+        {
+            name: "Welcome to the NEAR Year",
+            desc: "Join us as we introduce our flagship sponsor, NEAR Protocol, and onboard everyone to the ecosystem. This workshop is suited for all kinds of experiences. Pizza and snacks provided, bring a laptop!",
+            date: "11/15/23",
             action: "rsvp",
-            link: "https://partiful.com/e/szjckyqsxQPTbtgOAst7"
-        }, */
-/*         {
-            name: "Vechain x EasyA hackathon",
-            desc: "Early Access!",
-            date: "10/07/2023",
-            action: "rsvp",
-            link: "https://www.eventbrite.co.uk/e/vechain-x-easya-hackathon-early-access-7-8-october-win-30000-tickets-705875361207?aff=oddtdtcreator"
-        }, */
-/*         {
-            name: "Boston Hacks",
-            desc: "Bostons biggest hackathon",
-            date: "10/20/2023",
-            action: "rsvp",
-            link: "https://bostonhacks.io/"
-        }, */
+            link: "https://lu.ma/3r76o54y"
+        }
+        /*         {
+                    name: "Polygon Workshop",
+                    desc: "CDS B62, 7-8 PM",
+                    date: "10/04/2023",
+                }, */
+        /*         {
+                    name: "David Berlind, Editor-in-Chief at Blockchain Journal",
+                    desc: "Food and merch provided!",
+                    date: "10/11/2023 - CDS B62, 7-8 PM",
+                    action: "rsvp",
+                    link: "https://lu.ma/vixvzd99"
+        
+                }, */
+        /*         {
+                    name: "Smart Contract Workshop",
+                    desc: "Where code meets the blockchain",
+                    date: "10/17/23 - 125 Western Ave",
+                    action: "rsvp",
+                    link: "https://partiful.com/e/szjckyqsxQPTbtgOAst7"
+                }, */
+        /*         {
+                    name: "Vechain x EasyA hackathon",
+                    desc: "Early Access!",
+                    date: "10/07/2023",
+                    action: "rsvp",
+                    link: "https://www.eventbrite.co.uk/e/vechain-x-easya-hackathon-early-access-7-8-october-win-30000-tickets-705875361207?aff=oddtdtcreator"
+                }, */
+        /*         {
+                    name: "Boston Hacks",
+                    desc: "Bostons biggest hackathon",
+                    date: "10/20/2023",
+                    action: "rsvp",
+                    link: "https://bostonhacks.io/"
+                }, */
 
     ]
 

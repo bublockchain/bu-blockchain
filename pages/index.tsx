@@ -24,18 +24,32 @@ const oxygen_mono = Oxygen_Mono({
 export default function Home() {
 
   const eventmap = [
-    {
+/*     {
       name: "Web3 Portfolio Workshop",
       date: "10/25/23",
       action: "rsvp",
       link: "https://lu.ma/sj054m3f"
-    },
+    }, */
     {
-      name: "BUB: Boba, Friends, Crypto Fireside",
+      name: "Boba & Blockchain ",
       date: "11/01/23",
       action: "rsvp",
       link: "https://lu.ma/ifykxd2g"
     },
+    {
+      name: "BU Blockchain x Fidelity",
+      desc: "Join BU Blockchain and Fidelity to talk about the intersection between tradfi and the web3 space",
+      date: "11/08/23",
+      action: "rsvp",
+      link: "https://lu.ma/b2y5d5jn"
+  },
+  {
+      name: "Welcome to the NEAR Year",
+      desc: "Join us as we introduce our flagship sponsor, NEAR Protocol, and onboard everyone to the ecosystem. This workshop is suited for all kinds of experiences. Pizza and snacks provided, bring a laptop!",
+      date: "11/15/23",
+      action: "rsvp",
+      link: "https://lu.ma/3r76o54y"
+  },
 /*     {
       name: "Vechain x EasyA Hacks",
       date: "10/07/23",
