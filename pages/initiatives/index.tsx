@@ -62,6 +62,21 @@ export default function Initiatives() {
                     opportunities through
                     university engagement.</div>
             </div>
+            <div className={s.town}>
+                <h2>Club Ethos</h2>
+                <div className={s.sub}>
+                    we see a future where financial, economic, and social justice are all at
+                    the forefront of our global society. We see a future where, regardless of
+                    cost, knowledge barriers, and other supposed societal restrictions, all
+                    of our members have an equal opportunity to succeed. As such, we do not
+                    believe in restrictive processes for membership such as interviews or
+                    dues, and aim to make any costs associated with travel, merchandise, or
+                    other aspects of the club as low as we possibly can, but the goal is to
+                    make it all at no-cost to our members. We see this is an investment
+                    into the future of our organization and the overall web3 space, as we
+                    want our organization to welcome any curious person with open arms
+                    and help them unleash their full potential with Boston University Blockchain.</div>
+            </div>
             {/* <div className={s.divider}></div>
             <h2>what BU blockchain offers:</h2>
             <div className={s.offers}>
