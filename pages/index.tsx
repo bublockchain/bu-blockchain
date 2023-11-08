@@ -30,12 +30,12 @@ export default function Home() {
       action: "rsvp",
       link: "https://lu.ma/sj054m3f"
     }, */
-    {
+/*     {
       name: "Boba & Blockchain ",
       date: "11/01/23",
       action: "rsvp",
       link: "https://lu.ma/ifykxd2g"
-    },
+    }, */
     {
       name: "BU Blockchain x Fidelity",
       desc: "Join BU Blockchain and Fidelity to talk about the intersection between tradfi and the web3 space",

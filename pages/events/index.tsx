@@ -12,13 +12,13 @@ export default function Events() {
                     action: "rsvp",
                     link: "https://lu.ma/sj054m3f"
                   }, */
-        {
+/*         {
             name: "BUB: Boba, Friends, Crypto Fireside",
             desc: "Share a cup of boba with BU Blockchain while we announce our brand-new initiatives and do a “Why Web3” workshop! RSVP required for boba. ",
             date: "11/01/23",
             action: "rsvp",
             link: "https://lu.ma/ifykxd2g"
-        },
+        }, */
         {
             name: "BU Blockchain x Fidelity",
             desc: "Join BU Blockchain and Fidelity to talk about the intersection between tradfi and the web3 space",
