@@ -9,6 +9,21 @@ export default function Initiatives() {
             {/* <h2>Initiatives:</h2>
             <div className={s.divider}></div> */}
             <div className={s.wiblock}>
+                <h2>NEAR campus:</h2>
+                <div className={s.sub}>
+                    The integration of the blockchain operating system represents a significant leap forward in simplifying the development 
+                    of smart contracts by obviating the necessity for programmers to delve into intricate smart contract languages. This
+                    breakthrough greatly enhances operability and user-friendliness. Our collaboration with Near Protocol further cements 
+                    our commitment to shaping the future of Web3 right here at Boston University
+                    <br /><br />
+                    https://docs.near.org/concepts/welcome - ready to learn NEAR? start here.<br />
+                    https://docs.near.org/bos - ready to build on NEAR?<br />
+                    https://docs.near.org/concepts/web3/intro - bring your web2 knowledge to web3.<br />
+                    https://docs.near.org/develop/integrate/welcome - building Dapps on/with NEAR<br />
+                    https://near.zulipchat.com/ - Questions? ask here.
+                </div>
+            </div>
+            <div className={s.town}>
                 <h2>wiblock - women in blockchain:</h2>
                 <div className={s.sub}>WiBlock is a non-profit organization focused on
                     bridging the gap between female college
