@@ -1,6 +1,7 @@
 import React from "react";
 
 import s from './initiatives.module.scss'
+import Link from "next/link";
 
 export default function Initiatives() {
 
@@ -16,11 +17,11 @@ export default function Initiatives() {
                     breakthrough greatly enhances operability and user-friendliness. Our collaboration with Near Protocol further cements 
                     our commitment to shaping the future of Web3 right here at Boston University
                     <br /><br />
-                    https://docs.near.org/concepts/welcome - ready to learn NEAR? start here.<br />
-                    https://docs.near.org/bos - ready to build on NEAR?<br />
-                    https://docs.near.org/concepts/web3/intro - bring your web2 knowledge to web3.<br />
-                    https://docs.near.org/develop/integrate/welcome - building Dapps on/with NEAR<br />
-                    https://near.zulipchat.com/ - Questions? ask here.
+                    <Link href={"https://docs.near.org/concepts/welcome"}>ready to learn NEAR? start here.</Link> <br />
+                    <Link href={"https://docs.near.org/bos"}>ready to build on NEAR?</Link><br />
+                    <Link href={"https://docs.near.org/concepts/web3/intro"}>bring your web2 knowledge to web3.</Link> <br />
+                    <Link href={"https://docs.near.org/develop/integrate/welcome"}>building Dapps on/with NEAR</Link> <br />
+                    <Link href={"https://near.zulipchat.com/"}>Questions? ask here.</Link>
                 </div>
             </div>
             <div className={s.town}>
