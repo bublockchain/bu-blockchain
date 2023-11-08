@@ -84,16 +84,16 @@ export default function Home() {
 
   const partners = [
     {
+      name: "near foundation",
+      link: "/near.jpeg"
+    },
+    {
       name: "hedera",
       link: "/hedera.png"
     },
     {
       name: "bnb chain",
       link: "/bnbchain.jpg",
-    },
-    {
-      name: "near foundation",
-      link: "/near.jpeg"
     },
     /*     {
           name: "186 ventures",
