@@ -2,7 +2,7 @@ import React from "react";
 
 import s from "./team.module.scss";
 
-import {FaLinkedin, FaTwitter} from "react-icons/fa";
+import {FaEnvelope, FaLinkedin, FaTwitter} from "react-icons/fa";
 
 export default function Team() {
 
@@ -10,7 +10,8 @@ export default function Team() {
         {
             name: "Isabelle Ki",
             title: "President",
-            avatar: "/isabelle.png"
+            avatar: "/isabelle.png",
+            email: "isabelle@bublockchain.xyz"
         },
         {
             name: "Alysa Zhao",
@@ -40,7 +41,8 @@ export default function Team() {
         {
             name: "Akemi & Melissa",
             title: "CO-VPs of social events",
-            avatar: ""
+            avatar: "",
+            email: "akemi@bublockchain.xyz "
         },
         {
             name: "Noah Kim",
@@ -50,7 +52,8 @@ export default function Team() {
         {
             name: "Salem Gebru",
             title: "Director of marketing",
-            avatar: "/salem.png"
+            avatar: "/salem.png",
+            email: 'salem@bublockchain.xyz'
         },
         {
             name: "Dana",
@@ -81,10 +84,13 @@ export default function Team() {
                                 <div className={s.details}>
                                     <div className={s.name}>{member.name}</div>
                                     <div className={s.title}>{member.title}</div>
-                                    {/* <div className={s.socials}>
-                                        <FaLinkedin className={s.icon} />
-                                        <FaTwitter className={s.icon} />
-                                    </div> */}
+                                    <div className={s.socials}>
+                                        {/* <FaLinkedin className={s.icon} />
+                                        <FaTwitter className={s.icon} /> */}
+                                        {
+                                            member.email ? <a href={`mailto:${member.email}`}><FaEnvelope className={s.icon} /></a> : null
+                                        }
+                                    </div>
                                 </div>
                             </div>
                         )
