@@ -16,27 +16,31 @@ export default function Team() {
         {
             name: "Alysa Zhao",
             title: "Vice President",
-            avatar: "/alysa.png"
+            avatar: "/alysa.png",
         },
         {
             name: "Daniel Lung",
             title: "VP of administration",
-            avatar: "/daniel.png" 
+            avatar: "/daniel.png",
+            email: "daniel@bublockchain.xyz"
         },
         {
             name: "Sachin Thapa",
             title: "VP of finance",
-            avatar: "/sachin.png"
+            avatar: "/sachin.png",
+            email: "sachin@bublockchain.xyz"
         },
         {
             name: "Saad N.",
             title: "VP of technology",
-            avatar: "/saad.png"
+            avatar: "/saad.png",
+            email: "tech@bublockchain.xyz"
         },
         {
             name: "Wes A. Jorgensen",
             title: "VP of innovation",
-            avatar: "/wes.png"
+            avatar: "/wes.png",
+            email: "wes@bublockchain.xyz"
         },
         {
             name: "Akemi & Melissa",
@@ -58,7 +62,8 @@ export default function Team() {
         {
             name: "Dana",
             title: "Director of outreach", 
-            avatar: "/melanie.png"
+            avatar: "/melanie.png",
+            email: "dana@bublockchain.xyz"
         },
         {
             name: "Sahir Doshi",
