@@ -36,20 +36,20 @@ export default function Home() {
       action: "rsvp",
       link: "https://lu.ma/ifykxd2g"
     }, */
-    {
+/*     {
       name: "BU Blockchain x Fidelity",
       desc: "Join BU Blockchain and Fidelity to talk about the intersection between tradfi and the web3 space",
       date: "11/08/23",
       action: "rsvp",
       link: "https://lu.ma/b2y5d5jn"
-  },
-  {
+  }, */
+/*   {
       name: "Welcome to the NEAR Year",
       desc: "Join us as we introduce our flagship sponsor, NEAR Protocol, and onboard everyone to the ecosystem. This workshop is suited for all kinds of experiences. Pizza and snacks provided, bring a laptop!",
       date: "11/15/23",
       action: "rsvp",
       link: "https://lu.ma/3r76o54y"
-  },
+  }, */
 /*     {
       name: "Vechain x EasyA Hacks",
       date: "10/07/23",
@@ -68,18 +68,42 @@ export default function Home() {
       action: "rsvp",
       link: "https://partiful.com/e/szjckyqsxQPTbtgOAst7"
     }, */
-    {
+/*     {
       name: 'Boston Hacks',
       date: '11/18/23',
       action: 'rsvp',
       link: 'https://bostonhacks.io/'
-    },
+    }, */
     /*     {
           name: 'BU Blockchain Gala',
           date: '12/10/2023',
           action: 'rsvp',
           link: 'https://www.google.com'
         } */
+    {
+      name: "BUB x Community Labs",
+      date: "11/29/23",
+      action: "rsvp",
+      link: "https://lu.ma/0kxllyp7"
+    },
+    {
+      name: "BUB x Hedera: Careers in Blockchain",
+      date: "12/06/23",
+      action: "rsvp",
+      link: "https://lu.ma/ekpp7z6e"
+    },
+    {
+      name: "BUB: Media Day x EOY Event",
+      date: "12/09/23",
+      action: "rsvp",
+      link: "https://lu.ma/04n2gsnx"
+    },
+    {
+      name: "BU Blockchain: Towards a Brighter Future",
+      date: "03/24/24",
+      action: "rsvp",
+      link: "https://lu.ma/18hka43f",
+    }
   ]
 
   const partners = [
