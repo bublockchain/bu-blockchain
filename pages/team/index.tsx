@@ -17,6 +17,7 @@ export default function Team() {
             name: "Alysa Zhao",
             title: "Vice President",
             avatar: "/alysa.png",
+            email: "alysa@bublockchain.xyz"
         },
         {
             name: "Daniel Lung",
@@ -52,6 +53,12 @@ export default function Team() {
             name: "Noah Kim",
             title: "Director of design",
             avatar: "/noah.png"
+        },
+        {
+            name: "Christie Wu",
+            title: "Director of Social Media",
+            avatar: "/christie.png",
+            email: "christie@bublockchain.xyz"
         },
         {
             name: "Salem Gebru",
