@@ -80,12 +80,12 @@ export default function Home() {
           action: 'rsvp',
           link: 'https://www.google.com'
         } */
-    {
+/*     {
       name: "BUB x Community Labs",
       date: "11/29/23",
       action: "rsvp",
       link: "https://lu.ma/0kxllyp7"
-    },
+    }, */
     {
       name: "BUB x Hedera: Careers in Blockchain",
       date: "12/06/23",

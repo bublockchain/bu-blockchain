@@ -5,13 +5,13 @@ import Link from "next/link";
 export default function Events() {
 
     const events = [
-        {
+/*         {
             name: "BUB x Community Labs",
             desc: "Hear from Community Labs and their young entrepreneurial venture, with the founders being in their early 20s! Food provided.",
             date: "11/29/23",
             action: "rsvp",
             link: "https://lu.ma/0kxllyp7"
-        },
+        }, */
         {
             name: "BUB x Hedera: Careers in Blockchain",
             desc: "Come to our final general meeting, sponsored by Hedera, to hear from a panel of current web3 professionals from several disciplines. Come learn from those acting as changemakers in the space with us! Food provided.",
