@@ -109,7 +109,7 @@ export default function Home() {
   const partners = [
     {
       name: "near foundation",
-      link: "/near.jpeg"
+      link: /* "/near.jpeg" */ "campus.svg"
     },
     {
       name: "hedera",
