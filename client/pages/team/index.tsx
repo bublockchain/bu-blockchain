@@ -33,18 +33,19 @@ export default function Team({members}: InferGetStaticPropsType<typeof getStatic
     return (
         <div>
             <div className={s.team}>
-{/*                 <h2>our team:</h2> */}
+            {/* <h2>our team:</h2> */}
                 {
                     members.map((member, i) => {
                         return (
                             <div className={s.member} key={member.id}>
-                                {/* <div className={s.avatar}></div> */}
                                 <div className={s.details}>
                                     <div className={s.name}>{member.name}</div>
                                     <div className={s.title}>{member.position}</div>
                                     <div className={s.socials}>
-                                        {/* <FaLinkedin className={s.icon} />
-                                        <FaTwitter className={s.icon} /> */}
+                                        {/* 
+                                        <FaLinkedin className={s.icon} />
+                                        <FaTwitter className={s.icon} />
+                                        */}
                                         {
                                             member.email ? <a href={`mailto:${member.email}`}><FaEnvelope className={s.icon} /></a> : null
                                         }

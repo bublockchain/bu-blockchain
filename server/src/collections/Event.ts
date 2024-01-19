@@ -22,6 +22,11 @@ const Event: CollectionConfig = {
             name: 'date',
             label: 'Date',
             type: 'date',
+            admin: {
+                date: {
+                    pickerAppearance: 'dayAndTime'
+                }
+            },
             required: true,
         },
         {
