@@ -1,10 +1,33 @@
 import React from "react";
+import { InferGetStaticPropsType } from 'next'
 
 import s from "./team.module.scss";
 
 import {FaEnvelope, FaLinkedin, FaTwitter} from "react-icons/fa";
 
-export default function Team() {
+type Member = {
+    id: string,
+    name: string,
+    email: string,
+    createdAt: string,
+    updatedAt: string
+}
+
+export async function getStaticProps() {
+    const res = await fetch('https://bublockchain.up.railway.app/api/member?limit=100')
+    const members: Member[] = await res.json()
+    console.log(members)
+
+    return {
+        props: {
+            members,
+        },
+        revalidate: 10, // In seconds
+    }
+}
+
+export default function Team({members}: InferGetStaticPropsType<typeof getStaticProps>) {
+    console.log(members)
 
     const team = [
         {
