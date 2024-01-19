@@ -24,7 +24,7 @@ const start = async () => {
   const port = process.env.PORT || 3000;
 
   // Listen on `port` and 0.0.0.0
-  app.listen(3000, "0.0.0.0", function () {
+  app.listen(port as any, "0.0.0.0", function () {
 
   });
 }
