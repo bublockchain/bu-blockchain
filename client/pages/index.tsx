@@ -52,7 +52,7 @@ export default function Home({events}: InferGetStaticPropsType<typeof getStaticP
   const partners = [
     {
       name: "near foundation",
-      link: /* "/near.jpeg" */ "campus.svg"
+      link: "campus.svg"
     },
     {
       name: "hedera",
@@ -62,10 +62,6 @@ export default function Home({events}: InferGetStaticPropsType<typeof getStaticP
       name: "bnb chain",
       link: "/bnbchain.jpg",
     },
-    /*     {
-          name: "186 ventures",
-          link: "/186.png"
-        }, */
     {
       name: "circle",
       link: "/circle.png"
@@ -78,11 +74,6 @@ export default function Home({events}: InferGetStaticPropsType<typeof getStaticP
       name: "chainlink",
       link: "/chain.png"
     },
-    /*     {
-          name: "algorand",
-          link: "/algorand.png"
-        } */
-
   ]
 
   return (
