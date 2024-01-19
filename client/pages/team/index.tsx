@@ -8,6 +8,7 @@ import {FaEnvelope, FaLinkedin, FaTwitter} from "react-icons/fa";
 type Member = {
     id: string,
     name: string,
+    position: string,
     email: string,
     createdAt: string,
     updatedAt: string
@@ -15,110 +16,32 @@ type Member = {
 
 export async function getStaticProps() {
     const res = await fetch('https://bublockchain.up.railway.app/api/member?limit=100')
-    const members: Member[] = await res.json()
+    const raw = await res.json()
+    const members: Member[] = raw["docs"].reverse()
     console.log(members)
 
     return {
         props: {
             members,
         },
-        revalidate: 10, // In seconds
+        revalidate: 60, // In seconds
     }
 }
 
 export default function Team({members}: InferGetStaticPropsType<typeof getStaticProps>) {
-    console.log(members)
-
-    const team = [
-        {
-            name: "Isabelle Ki",
-            title: "President",
-            avatar: "/isabelle.png",
-            email: "isabelle@bublockchain.xyz"
-        },
-        {
-            name: "Alysa Zhao",
-            title: "Vice President",
-            avatar: "/alysa.png",
-            email: "alysa@bublockchain.xyz"
-        },
-        {
-            name: "Daniel Lung",
-            title: "VP of administration",
-            avatar: "/daniel.png",
-            email: "daniel@bublockchain.xyz"
-        },
-        {
-            name: "Sachin Thapa",
-            title: "VP of finance",
-            avatar: "/sachin.png",
-            email: "sachin@bublockchain.xyz"
-        },
-        {
-            name: "Saad N.",
-            title: "VP of technology",
-            avatar: "/saad.png",
-            email: "tech@bublockchain.xyz"
-        },
-        {
-            name: "Wes A. Jorgensen",
-            title: "VP of innovation",
-            avatar: "/wes.png",
-            email: "wes@bublockchain.xyz"
-        },
-        {
-            name: "Akemi & Melissa",
-            title: "CO-VPs of social events",
-            avatar: "",
-            email: "akemi@bublockchain.xyz "
-        },
-        {
-            name: "Noah Kim",
-            title: "Director of design",
-            avatar: "/noah.png"
-        },
-        {
-            name: "Christie Wu",
-            title: "Director of Social Media",
-            avatar: "/christie.png",
-            email: "christie@bublockchain.xyz"
-        },
-        {
-            name: "Salem Gebru",
-            title: "Director of marketing",
-            avatar: "/salem.png",
-            email: 'salem@bublockchain.xyz'
-        },
-        {
-            name: "Dana",
-            title: "Director of outreach", 
-            avatar: "/melanie.png",
-            email: "dana@bublockchain.xyz"
-        },
-        {
-            name: "Sahir Doshi",
-            title: "Advisor",
-            avatar: "/sahir.png"
-        },
-        {
-            name: "Cameron Asadi",
-            title: "Advisor",
-            avatar: "/cameron.png"
-        }
-    ]
 
     return (
         <div>
             <div className={s.team}>
 {/*                 <h2>our team:</h2> */}
                 {
-                    team.map((member, i) => {
+                    members.map((member, i) => {
                         return (
-                            <div className={s.member}>
+                            <div className={s.member} key={member.id}>
                                 {/* <div className={s.avatar}></div> */}
                                 <div className={s.details}>
                                     <div className={s.name}>{member.name}</div>
-                                    <div className={s.title}>{member.title}</div>
+                                    <div className={s.title}>{member.position}</div>
                                     <div className={s.socials}>
                                         {/* <FaLinkedin className={s.icon} />
                                         <FaTwitter className={s.icon} /> */}
