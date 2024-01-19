@@ -25,7 +25,7 @@ const start = async () => {
 
   // Listen on `port` and 0.0.0.0
   app.listen(port as any, "0.0.0.0", function () {
-
+    payload.logger.info(`Server listening on port ${port}`)
   });
 }
 
