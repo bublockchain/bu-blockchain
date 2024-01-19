@@ -35,7 +35,12 @@ type Event = {
 export async function getStaticProps() {
   const res = await fetch('https://bublockchain.up.railway.app/api/event?limit=100')
   const raw = await res.json()
-  const events: Event[] = raw["docs"].reverse()
+  //sort by date, filter any in the past
+  const events: Event[] = raw["docs"].sort((a: Event, b: Event) => {
+    return new Date(a.date).getTime() - new Date(b.date).getTime()
+  }).filter((event: Event) => {
+    return new Date(event.date).getTime() > new Date().getTime()
+  })
   console.log(events)
 
   return {
