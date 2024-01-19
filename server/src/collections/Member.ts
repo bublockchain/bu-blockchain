@@ -19,7 +19,7 @@ const Member: CollectionConfig = {
             name: 'email',
             label: 'Email',
             type: 'text',
-            required: true,
+            required: false,
         }
     ],
 }
