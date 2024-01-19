@@ -10,6 +10,7 @@ import { AsciiEffect } from 'three/addons/effects/AsciiEffect.js';
 import { TrackballControls } from 'three/addons/controls/TrackballControls.js';
 import Ascii from '@/components/ascii/ascii';
 import Link from 'next/link';
+import { InferGetStaticPropsType } from 'next';
 
 const inter = Inter({ subsets: ['latin'] })
 const roboto = Roboto({
@@ -21,90 +22,32 @@ const oxygen_mono = Oxygen_Mono({
   weight: '400'
 })
 
-export default function Home() {
+type Event = {
+  id: string,
+  title: string,
+  description: string,
+  date: string,
+  link: string,
+  createdAt: string,
+  updatedAt: string
+}
 
-  const eventmap = [
-/*     {
-      name: "Web3 Portfolio Workshop",
-      date: "10/25/23",
-      action: "rsvp",
-      link: "https://lu.ma/sj054m3f"
-    }, */
-/*     {
-      name: "Boba & Blockchain ",
-      date: "11/01/23",
-      action: "rsvp",
-      link: "https://lu.ma/ifykxd2g"
-    }, */
-/*     {
-      name: "BU Blockchain x Fidelity",
-      desc: "Join BU Blockchain and Fidelity to talk about the intersection between tradfi and the web3 space",
-      date: "11/08/23",
-      action: "rsvp",
-      link: "https://lu.ma/b2y5d5jn"
-  }, */
-/*   {
-      name: "Welcome to the NEAR Year",
-      desc: "Join us as we introduce our flagship sponsor, NEAR Protocol, and onboard everyone to the ecosystem. This workshop is suited for all kinds of experiences. Pizza and snacks provided, bring a laptop!",
-      date: "11/15/23",
-      action: "rsvp",
-      link: "https://lu.ma/3r76o54y"
-  }, */
-/*     {
-      name: "Vechain x EasyA Hacks",
-      date: "10/07/23",
-      action: "rsvp",
-      link: "https://www.eventbrite.co.uk/e/vechain-x-easya-hackathon-early-access-7-8-october-win-30000-tickets-705875361207?aff=oddtdtcreator"
-    }, */
-/*     {
-      name: "David Berlind, Editor in Chief at Blockchain Journal",
-      date: "10/11/23 - CDS B62",
-      action: "rsvp",
-      link: "https://lu.ma/vixvzd99"
-    },
-    {
-      name: "Smart Contract Workshop",
-      date: "10/17/23 - 125 Western Ave",
-      action: "rsvp",
-      link: "https://partiful.com/e/szjckyqsxQPTbtgOAst7"
-    }, */
-/*     {
-      name: 'Boston Hacks',
-      date: '11/18/23',
-      action: 'rsvp',
-      link: 'https://bostonhacks.io/'
-    }, */
-    /*     {
-          name: 'BU Blockchain Gala',
-          date: '12/10/2023',
-          action: 'rsvp',
-          link: 'https://www.google.com'
-        } */
-/*     {
-      name: "BUB x Community Labs",
-      date: "11/29/23",
-      action: "rsvp",
-      link: "https://lu.ma/0kxllyp7"
-    }, */
-    {
-      name: "BUB x Hedera: Careers in Blockchain",
-      date: "12/06/23",
-      action: "rsvp",
-      link: "https://lu.ma/ekpp7z6e"
-    },
-    {
-      name: "BUB: Media Day x EOY Event",
-      date: "12/09/23",
-      action: "rsvp",
-      link: "https://lu.ma/04n2gsnx"
-    },
-    {
-      name: "BU Blockchain: Towards a Brighter Future",
-      date: "03/24/24",
-      action: "rsvp",
-      link: "https://lu.ma/18hka43f",
-    }
-  ]
+export async function getStaticProps() {
+  const res = await fetch('https://bublockchain.up.railway.app/api/event?limit=100')
+  const raw = await res.json()
+  const events: Event[] = raw["docs"].reverse()
+  console.log(events)
+
+  return {
+      props: {
+          events,
+      },
+      revalidate: 60, // In seconds
+  }
+}
+
+export default function Home({events}: InferGetStaticPropsType<typeof getStaticProps>) {
+
 
   const partners = [
     {
@@ -161,15 +104,15 @@ export default function Home() {
             <h3>upcoming events</h3>
 
             {
-              eventmap.map((event, i) => {
+              events.map((event, i) => {
                 return (
                   <div className={s.event} key={i}>
                     <div className={s.dot}>
                       <div className={s.point}>%</div>
                     </div>
                     <div className={s.details}>
-                      {event.name}
-                      <div className={s.date}>{event.date}</div>
+                      {event.title}
+                      <div className={s.date}>{new Date(event.date).toLocaleDateString()}</div>
                     </div>
                     <div className={s.action}>
                       {
