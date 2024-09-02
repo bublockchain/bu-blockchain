@@ -25,6 +25,10 @@ export default function Navbar(
             link: "/about"
         },
         {
+            name: "Hackathon",
+            link: "/hackathon"
+        },
+        {
             name: "Initiatives",
             link: "/initiatives"
         },

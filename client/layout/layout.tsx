@@ -8,27 +8,30 @@ import s from './layout.module.scss'
 import Ascii from "@/components/ascii/ascii"
 import { useState } from "react"
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+import { useRouter } from 'next/router'
 
-    let [opened, setOpened] = useState(false)
+export default function Layout({ children }: { children: React.ReactNode }) {
+    const [opened, setOpened] = useState(false)
+    const router = useRouter()
+    const isHackathonPage = router.pathname === '/hackathon'
 
     return (
         <>
-            <Navbar setopened={
-                setOpened
-            }/>
-            {
-                !opened ?
-                    <main className={`${oxygen_mono.className} ${s.main}`}>
-                        <section className={s.content}>
-                            {children}
-                        </section>
-                        <section className={s.graphic}>
-                            <Ascii />
-                        </section>
-                    </main>
-                    : ""
-            }
+            {!isHackathonPage && <Navbar setopened={setOpened} />}
+            {!isHackathonPage && !opened ? (
+                <main className={`${oxygen_mono.className} ${s.main}`}>
+                    <section className={s.content}>
+                        {children}
+                    </section>
+                    <section className={s.graphic}>
+                        <Ascii />
+                    </section>
+                </main>
+            ) : (
+                <main className={oxygen_mono.className}>
+                    {children}
+                </main>
+            )}
         </>
     )
 }
