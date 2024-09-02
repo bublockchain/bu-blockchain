@@ -49,7 +49,7 @@ export default function Hackathon() {
 			<div className={s.info}>
 				<div className={s.item}>
 					<h3>Date</h3>
-					<p>November 23-24, 2024</p>
+					<p>November 23, 2024 <br></br> November 24, 2024</p>
 				</div>
 				<div className={s.item}>
 					<h3>Prizes</h3>
@@ -62,7 +62,7 @@ export default function Hackathon() {
 					<h3>Location</h3>
 					<p>Boston University</p>
 					<p>Photonics Center</p>
-					<p>8 St Mary's St, Boston, MA 02215</p>
+					<p>8 St Mary's St, <br></br> Boston, MA 02215</p>
 				</div>
 			</div>
 			{isClient && (
