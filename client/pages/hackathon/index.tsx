@@ -68,15 +68,17 @@ export default function Hackathon() {
 			{isClient && (
 				<form className={s.interest} onSubmit={submit}>
 					<h3>Interest Form</h3>
-					<input
-						placeholder="email address"
-						required
-						type="email"
-						id='email'
-						onChange={(e) => setEmail(e.target.value)}
-						value={email}
-					/>
-					<button type="submit">submit</button>
+					<div className={s.form}>
+						<input
+							placeholder="email address"
+							required
+							type="email"
+							id='email'
+							onChange={(e) => setEmail(e.target.value)}
+							value={email}
+						/>
+						<button type="submit">submit</button>	
+					</div>
 					{status && <p className={s.status}>{status}</p>}
 				</form>
 			)}
