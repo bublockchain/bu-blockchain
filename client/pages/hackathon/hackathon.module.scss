@@ -5,7 +5,8 @@
     display:flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 8rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     text-align: center  ;
 
     h1{
@@ -15,9 +16,17 @@
     h2{
         font-size: 3.2rem;
     }
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
 
     @media screen and (max-width: 1300px) {
-        padding-top: 6rem;
         h1 {
             font-size: 4rem;
         }
@@ -34,37 +43,57 @@
         h2 {
             font-size: 1.5rem;
         }
-        
     }
 
 
     .info {
         display: flex;
         justify-content: space-between;
-        margin-top: 8rem;
+        margin-top: 6rem;
         width: 100%;
 
         .item {
             flex: 1;
             margin: 0 1rem;
             text-align: center;
-
-            h3 {
-                font-size: 2rem;
-                margin-bottom: 1rem;
-            }
-
-            p {
-                font-size: 1.2rem;
-                line-height: 1.5;
-            }
         }
 
         @media screen and (max-width: 1300px) {
             flex-direction: column;
-            margin-top: 6rem;
             .item {
                 margin: 1rem 1rem;
+            }
+        }
+    }
+
+    .interest {
+        display: flex;
+        flex-direction: column;
+        padding-top: 4rem;
+
+        input {
+            padding: 1rem 1rem;
+            width: 340px;
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: .6rem;
+            margin-top: 1rem;
+        }
+        button {
+            width: 340px;
+            padding: 1rem 2rem;
+            border: transparent;
+            background-color: white;
+            color: #000;
+            font-size: 1rem;
+            margin-top: 1rem;
+            border-radius: .6rem;
+            cursor: pointer;
+            transition: all 0.14s ease-in-out;
+
+            &:hover {
+                background-color: #7851A9;
+                color: white;
             }
         }
     }

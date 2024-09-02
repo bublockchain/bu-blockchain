@@ -1,6 +1,3 @@
-
-//make a nextjs nodemailer endpoint
-
 import type { NextApiRequest, NextApiResponse } from 'next'
 import nodemailer from 'nodemailer'
 

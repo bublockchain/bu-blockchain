@@ -1,1 +1,4 @@
 .DS_Store
+.vercel
+.env
+.env.development.local
