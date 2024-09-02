@@ -13,12 +13,13 @@ import { useRouter } from 'next/router'
 export default function Layout({ children }: { children: React.ReactNode }) {
     const [opened, setOpened] = useState(false)
     const router = useRouter()
-    const isHackathonPage = router.pathname === '/hackathon'
+
+    const hideAscii = ["/hackathon"].includes(router.pathname)
 
     return (
         <>
-            {!isHackathonPage && <Navbar setopened={setOpened} />}
-            {!isHackathonPage && !opened ? (
+            <Navbar setopened={setOpened} />
+            {!hideAscii && !opened ? (
                 <main className={`${oxygen_mono.className} ${s.main}`}>
                     <section className={s.content}>
                         {children}

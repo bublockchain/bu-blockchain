@@ -10,10 +10,17 @@
                 object-fit: contain;
                 width: 100%;
             }
+            margin-right: 16px;
         }
 
-        .bu {
+        .dot {
+            margin-right: 16px;
+            font-size: 62px;
+        }
+
+        .bu, .bba {
             margin-left: 16px;
+            margin-right: 16px;
 
             span {
                 color: #cc0000;

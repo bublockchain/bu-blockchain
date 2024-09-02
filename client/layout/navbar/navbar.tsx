@@ -4,6 +4,7 @@ import s from "./navbar.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 import { Oxygen_Mono } from "next/font/google";
+import { useRouter } from "next/router";
 
 const oxygen_mono = Oxygen_Mono({
     subsets: ['latin'],
@@ -17,6 +18,8 @@ interface Props {
 export default function Navbar(
     { setopened }: Props
 ) {
+
+    const router = useRouter()
 
     const linkmap = [
 
@@ -67,8 +70,9 @@ export default function Navbar(
             hamburger.style.transform = 'rotate(90deg)'
             navbar.style.height = '100vh'
         }
-
     }
+
+    const bba = router.pathname.includes("hackathon")
 
     return (
         <nav className={`${s.navbar} ${oxygen_mono.className}`}>
@@ -76,9 +80,27 @@ export default function Navbar(
                 <Link className={s.logo} href={'/'}>
                     <Image src="/bublogo.png" alt="BU Blockchain" width={48} height={48} />
                 </Link>
-                <Link className={s.bu} href={'/'}>
-                    Boston University Blockchain
-                </Link>
+                {
+                    !bba && (
+                        <Link className={s.bu} href={'/'}>
+                            Boston University Blockchain
+                        </Link>
+                    )
+                }
+                {
+                    bba && (
+                        <>
+                            <div className={s.dot}>{"⋅"}</div>
+                            <Link className={s.logo} href={'/'}>
+                                <Image src="/bba.svg" alt="BBA" width={28} height={28} />
+                            </Link>
+                            {/* <Link className={s.bba} href={'/'}>
+                                Boston Blockchain Association 
+                            </Link> */}
+                        </>
+                    )
+                }
+        
                 <div className={s.space}>
 
                 </div>
