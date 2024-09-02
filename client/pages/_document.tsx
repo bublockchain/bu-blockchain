@@ -8,6 +8,7 @@ export default function Document() {
         <Script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242637/TrackballProjectorDetector.js"></Script>
         <Script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242637/AsciiEffect.js"></Script>
         <link rel="shortcut icon" href="/bub.ico" />
+        <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet" />
         <title>BU Blockchain</title>
       </Head>
       <body>
