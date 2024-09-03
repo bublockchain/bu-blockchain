@@ -49,7 +49,7 @@ export default function Hackathon() {
 			<div className={s.info}>
 				<div className={s.item}>
 					<h3>Date</h3>
-					<p>November 23, 2024 <br></br> November 24, 2024</p>
+					<p>November 23, 2024<br></br> November 24, 2024</p>
 				</div>
 				<div className={s.item}>
 					<h3>Prizes</h3>

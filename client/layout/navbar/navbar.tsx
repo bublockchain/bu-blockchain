@@ -91,12 +91,9 @@ export default function Navbar(
                     bba && (
                         <>
                             <div className={s.dot}>{"⋅"}</div>
-                            <Link className={s.logo} href={'/'}>
+                            <Link className={s.logo} href={'https://bostonblockchainassociation.com'}>
                                 <Image src="/bba.svg" alt="BBA" width={28} height={28} />
                             </Link>
-                            {/* <Link className={s.bba} href={'/'}>
-                                Boston Blockchain Association 
-                            </Link> */}
                         </>
                     )
                 }
