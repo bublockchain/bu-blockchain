@@ -92,7 +92,7 @@ export default function Home({events}: InferGetStaticPropsType<typeof getStaticP
       <div className={`${oxygen_mono.className}`}>
         <div className={s.content}>
           <h2><span>BU's</span> student run blockchain and distributed technology club. supporting research & innovation in web3.0</h2>
-          <div className={s.location}>Center for Computing & Data Sciences, 665 Commonwealth Ave, 464, Boston, MA 02215, USA</div>
+          <div className={s.location}>Center for Computing & Data Sciences, 665 Commonwealth Ave, 463, Boston, MA 02215, USA</div>
 
           <Link href="https://lu.ma/user/bublockchain"><button className={s.join}>join us</button></Link>
 
