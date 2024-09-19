@@ -85,9 +85,9 @@
                 border: 1px solid white;
                 border-radius: .6rem;
                 margin-top: 1rem;
-                margin-bottom: 1rem; // Add space below inputs
-                color: white; // Ensure text is visible
-                font-size: 1rem; // Match font size
+                margin-bottom: 1rem; 
+                color: white; 
+                font-size: 1rem; 
             }
 
             button {
@@ -97,7 +97,7 @@
                 background-color: white;
                 color: #000;
                 font-size: 1rem;
-                font-weight: 600; // Match font weight
+                font-weight: 600; 
                 margin-top: 1rem;
                 border-radius: .6rem;
                 cursor: pointer;
@@ -142,15 +142,15 @@
             overflow-x: hidden;
 
             input {
-                width: 80%; // Change from 50% to 100%
+                width: 80%;
                 padding: 1rem;
                 background-color: transparent;
                 border: 1px solid white;
                 border-radius: .6rem;
                 margin-top: 1rem;
-                margin-bottom: 1rem; // Add space below inputs
-                color: white; // Ensure text is visible
-                font-size: 1rem; // Match font size
+                margin-bottom: 1rem; 
+                color: white;
+                font-size: 1rem; 
             }
 
             .longInput {
@@ -158,8 +158,8 @@
                 resize: none;
                 text-align: left;
                 vertical-align: top;
-                padding-top: 1rem; // Add padding to the top
-                line-height: 1.5; // Add line height for better readability
+                padding-top: 1rem; 
+                line-height: 1.5; 
             }
 
         }
@@ -175,12 +175,12 @@
         }
 
         .formTitle {
-            font-size: 1.2rem; // Reduced from 1.5rem
+            font-size: 1.2rem; 
             font-family: 'Oxygen Mono', monospace;
             margin-bottom: 0.5rem;
-            margin-top: 1rem; // Add space above titles
+            margin-top: 1rem; 
             text-align: left;
-            width: 100%; // Ensure title takes full width
+            width: 100%; 
         }
 
         .checkboxGroup {
