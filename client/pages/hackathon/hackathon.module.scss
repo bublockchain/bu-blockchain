@@ -187,10 +187,6 @@
             margin-bottom: 1rem;
         }
 
-        .longInput {
-            width: 100%;
-        }
-
         .formTitle {
             font-size: 1.2rem; 
             font-family: 'Oxygen Mono', monospace;
@@ -249,16 +245,41 @@
         }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 800px) {
         width: 90vw;
 
-        .formRow {
-            flex-direction: column;
-        }
+        .form {
+            width: 80vw;
 
-        .formGroup {
-            input {
+            input:not([type="checkbox"]), textarea, .expandableTextarea {
+                width: 100% !important;
+            }
+
+            .formRow {
+                flex-direction: column;
+            }
+
+            .formGroup {
                 width: 100%;
+            }
+
+            textarea {
+                margin-top: 1rem;
+            }
+
+            .checkboxGroup {
+                display: flex;
+                align-items: center;
+                margin-bottom: 0.5rem;
+
+                input[type="checkbox"] {
+                    width: auto !important;
+                    margin-right: 0.5rem;
+                }
+
+                p {
+                    margin: 0;
+                }
             }
         }
     }

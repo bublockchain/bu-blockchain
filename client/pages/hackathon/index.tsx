@@ -28,6 +28,11 @@ export default function Hackathon() {
 
 	useEffect(() => {
 		setIsClient(true);
+		// Add this to scroll to the interest section if the URL has #interest
+		if (typeof window !== 'undefined' && window.location.hash === '#interest') {
+			const interestSection = document.querySelector(`.${s.interest}`);
+			interestSection?.scrollIntoView({ behavior: 'smooth' });
+		}
 	}, []);
 
 	async function submit(e: React.FormEvent<HTMLFormElement>) {
@@ -101,12 +106,14 @@ export default function Hackathon() {
 				</div>
 			</div>
 			{isClient && (
-				<div className={s.interest}>
+				<div className={s.interest} id="interest">
 					<h3>Interest Form</h3>
 					{!isFormExpanded ? (
-						<button onClick={() => setIsFormExpanded(true)} className={s.applyButton}>
-							Apply
-						</button>
+						<Link href="/hackathon#interest" scroll={false}>
+							<button onClick={() => setIsFormExpanded(true)} className={s.applyButton}>
+								Apply
+							</button>
+						</Link>
 					) : (
 						<form className={s.form} onSubmit={submit}>
 							<h1 className={s.formTitle}>Full Name</h1>
