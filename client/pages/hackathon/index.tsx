@@ -199,11 +199,10 @@ export default function Hackathon() {
 									<div className={s.formGroup}>
 										<h1 className={s.formTitle}>Previous Project</h1>
 										<p className={s.formDescription}>Please describe a previous project you've worked on and a challenge you overcame to complete it.</p>
-										<input
+										<textarea
 											required
-											type="text"
 											id='previousProject'
-											className={`${s.longInput}`} 
+											className={`${s.expandableTextarea}`}
 											onChange={(e) => setFormData({...formData, previousProject: e.target.value})}
 											value={formData.previousProject}
 										/>
@@ -212,14 +211,13 @@ export default function Hackathon() {
 							)}
 							<div className={s.formGroup}>
 								<h1 className={s.formTitle}>Why do you want to attend?</h1>
-								<input
-									required
-									type="text"
-									id='whyAttend'
-									className={`${s.longInput}`} // Add this line
-									onChange={(e) => setFormData({...formData, whyAttend: e.target.value})}
-									value={formData.whyAttend}
-								/>
+								<textarea
+											required
+											id='whyAttend'
+											className={`${s.expandableTextarea}`}
+											onChange={(e) => setFormData({...formData, whyAttend: e.target.value})}
+											value={formData.whyAttend}
+										/>
 								<button type="submit">Submit Application</button>
 							</div>
 						</form>

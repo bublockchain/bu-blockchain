@@ -81,28 +81,28 @@
             input {
                 width: 50%;
                 padding: 1rem;
-                background-color: transparent;
+                background-color: white;
+                color: black;
+                caret-color: black;
                 border: 1px solid white;
                 border-radius: .6rem;
                 margin-top: 1rem;
                 margin-bottom: 1rem; 
-                color: white; 
                 font-size: 1rem; 
             }
 
-            button {
-                width: 100%;
-                padding: 1rem 2rem;
-                border: transparent;
+            .expandableTextarea {
+                min-height: 100px;
+                height: auto;
+                overflow: hidden;
                 background-color: white;
-                color: #000;
-                font-size: 1rem;
-                font-weight: 600; 
-                margin-top: 1rem;
+                color: black;
+                margin-left: 4px;
+                padding-top: 0;
+                vertical-align: top;
+                caret-color: black;
                 border-radius: .6rem;
-                cursor: pointer;
-                transition: all 0.14s ease-in-out;
-
+                font-size: 1rem;
             }
         }
     }
@@ -113,10 +113,11 @@
         font-size: 1.2rem;
         margin-top: 1rem;
         border: transparent;
-        background-color: white;
-        color: #000;
+        background-color: black;
+        color: #ffffff;
         font-weight: 600; 
         border-radius: .6rem;
+        border: 1px solid white;
         cursor: pointer;
         transition: all 0.14s ease-in-out;
     }
@@ -144,12 +145,13 @@
             input {
                 width: 80%;
                 padding: 1rem;
-                background-color: transparent;
+                background-color: white;
+                color: black;
+                caret-color: black;
                 border: 1px solid white;
                 border-radius: .6rem;
                 margin-top: 1rem;
                 margin-bottom: 1rem; 
-                color: white;
                 font-size: 1rem; 
             }
 
@@ -162,12 +164,27 @@
                 line-height: 1.5; 
             }
 
+            .expandableTextarea {
+                min-height: 100px;
+                height: auto;
+                overflow: hidden;
+                background-color: white;
+                color: black;
+                margin-left: 4px;
+                padding-top: 0;
+                vertical-align: top;
+                caret-color: black;
+                border-radius: .6rem;
+                font-size: 1rem;
+            }
         }
 
         .formDescription {
             font-size: 0.8rem;
             color: lightgrey;
             align-self: flex-start;
+            text-align: left;
+            margin-bottom: 1rem;
         }
 
         .longInput {
@@ -219,15 +236,30 @@
             width: 100%;
             padding: 1rem 2rem;
             border: transparent;
-            background-color: white;
-            color: #000;
+            background-color: black;
+            color: white;
             font-size: 1rem;
-            font-weight: 600; // Match font weight
+            font-weight: 600;
             margin-top: 1rem;
             border-radius: .6rem;
+            border: 1px solid white;
             cursor: pointer;
             transition: all 0.14s ease-in-out;
 
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 90vw;
+
+        .formRow {
+            flex-direction: column;
+        }
+
+        .formGroup {
+            input {
+                width: 100%;
+            }
         }
     }
 }
