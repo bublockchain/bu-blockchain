@@ -13,6 +13,18 @@ export default function Hackathon() {
 	const [email, setEmail] = useState('');
 	const [status, setStatus] = useState('');
 	const [isClient, setIsClient] = useState(false);
+	const [formData, setFormData] = useState({
+		email: '',
+		name: '',
+		university: '',
+		major: '',
+		graduationYear: '',
+		userType: '', 
+		github: '', // Technical questions
+		previousProject: '', // User tells us about a previous project
+		whyAttend: '', // Why they want to attend for both user types
+	});
+	const [isFormExpanded, setIsFormExpanded] = useState(false);
 
 	useEffect(() => {
 		setIsClient(true);
@@ -27,14 +39,37 @@ export default function Hackathon() {
 				headers: {
 					'Content-Type': 'application/json',
 				},
-				body: JSON.stringify({ email }),
+				body: JSON.stringify(formData),
 			});
 			if (response.ok) {
 				setStatus('Thank you for your interest!');
-				setEmail(''); // Clear the email input
+				setFormData({
+					email: '',
+					name: '',
+					university: '',
+					major: '',
+					graduationYear: '',
+					userType: '', // default to empty
+					github: '', // reset github
+					previousProject: '', // reset previousProject
+					whyAttend: '', // reset whyAttend
+				});
+				setIsFormExpanded(false);
 			} else {
 				const data = await response.json();
 				setStatus(`Error: ${data.error || 'Something went wrong'}`);
+				setFormData({
+					email: '',
+					name: '',
+					university: '',
+					major: '',
+					graduationYear: '',
+					userType: '', // default to empty
+					github: '', // reset github
+					previousProject: '', // reset previousProject
+					whyAttend: '', // reset whyAttend
+				});
+				setIsFormExpanded(false);
 			}
 		} catch (error) {
 			console.error('Error submitting form:', error);
@@ -66,21 +101,131 @@ export default function Hackathon() {
 				</div>
 			</div>
 			{isClient && (
-				<form className={s.interest} onSubmit={submit}>
+				<div className={s.interest}>
 					<h3>Interest Form</h3>
-					<div className={s.form}>
-						<input
-							placeholder="email address"
-							required
-							type="email"
-							id='email'
-							onChange={(e) => setEmail(e.target.value)}
-							value={email}
-						/>
-						<button type="submit">submit</button>	
-					</div>
+					{!isFormExpanded ? (
+						<button onClick={() => setIsFormExpanded(true)} className={s.applyButton}>
+							Apply
+						</button>
+					) : (
+						<form className={s.form} onSubmit={submit}>
+							<h1 className={s.formTitle}>Full Name</h1>
+							<input
+								required
+								type="text"
+								id='name'
+								onChange={(e) => setFormData({...formData, name: e.target.value})}
+								value={formData.name}
+							/>
+							<div className={s.formRow}>
+								<div className={s.formGroup}>
+									<h1 className={s.formTitle}>Email Address</h1>
+									<input
+										required
+										type="email"
+										id='email'
+										onChange={(e) => setFormData({...formData, email: e.target.value})}
+										value={formData.email}
+									/>
+								</div>
+								<div className={s.formGroup}>
+									<h1 className={s.formTitle}>University</h1>
+									<input
+										required
+										type="text"
+										id='university'
+										onChange={(e) => setFormData({...formData, university: e.target.value})}
+										value={formData.university}
+									/>
+								</div>
+							</div>
+							<div className={s.formRow}>
+								<div className={s.formGroup}>
+									<h1 className={s.formTitle}>Major</h1>
+									<input
+										required
+										type="text"
+										id='major'
+										onChange={(e) => setFormData({...formData, major: e.target.value})}
+										value={formData.major}
+									/>
+								</div>
+								<div className={s.formGroup}>
+									<h1 className={s.formTitle}>Graduation Year</h1>
+									<input
+										required
+										type="text"
+										id='graduationYear'
+										onChange={(e) => setFormData({...formData, graduationYear: e.target.value})}
+										value={formData.graduationYear}
+									/>
+								</div>
+							</div>
+							<div>
+								<h1 className={s.formTitle}>What track are you applying for?</h1>
+									<div className={s.checkboxGroup}>
+										<input
+											className={s.checkbox}
+											type="checkbox"
+											name="userType"
+											value="technical"
+											checked={formData.userType === 'technical'}
+											onChange={(e) => setFormData({...formData, userType: e.target.checked ? 'technical' : ''})}
+										/>
+										<p>Technical</p>
+									</div>
+									<div className={s.checkboxGroup}>
+										<input
+											className={s.checkbox}
+											type="checkbox"
+											name="userType"
+											value="business"
+											checked={formData.userType === 'business'}
+											onChange={(e) => setFormData({...formData, userType: e.target.checked ? 'business' : ''})}
+										/>
+										<p>Business</p>
+									</div>
+							</div>
+							{formData.userType === 'technical' && (
+								<>
+									<h1 className={s.formTitle}>GitHub Profile</h1>
+									<input
+										required
+										type="text"
+										id='github'
+										onChange={(e) => setFormData({...formData, github: e.target.value})}
+										value={formData.github}
+									/>
+									<div className={s.formGroup}>
+										<h1 className={s.formTitle}>Previous Project</h1>
+										<p className={s.formDescription}>Please describe a previous project you've worked on and a challenge you overcame to complete it.</p>
+										<input
+											required
+											type="text"
+											id='previousProject'
+											className={`${s.longInput}`} 
+											onChange={(e) => setFormData({...formData, previousProject: e.target.value})}
+											value={formData.previousProject}
+										/>
+									</div>
+								</>
+							)}
+							<div className={s.formGroup}>
+								<h1 className={s.formTitle}>Why do you want to attend?</h1>
+								<input
+									required
+									type="text"
+									id='whyAttend'
+									className={`${s.longInput}`} // Add this line
+									onChange={(e) => setFormData({...formData, whyAttend: e.target.value})}
+									value={formData.whyAttend}
+								/>
+								<button type="submit">Submit Application</button>
+							</div>
+						</form>
+					)}
 					{status && <p className={s.status}>{status}</p>}
-				</form>
+				</div>
 			)}
 		</div>
 	);
