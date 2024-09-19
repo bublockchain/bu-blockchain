@@ -54,10 +54,10 @@ export default function Hackathon() {
 					university: '',
 					major: '',
 					graduationYear: '',
-					userType: '', // default to empty
-					github: '', // reset github
-					previousProject: '', // reset previousProject
-					whyAttend: '', // reset whyAttend
+					userType: '', 
+					github: '',
+					previousProject: '', 
+					whyAttend: '', 
 				});
 				setIsFormExpanded(false);
 			} else {
@@ -69,10 +69,10 @@ export default function Hackathon() {
 					university: '',
 					major: '',
 					graduationYear: '',
-					userType: '', // default to empty
-					github: '', // reset github
-					previousProject: '', // reset previousProject
-					whyAttend: '', // reset whyAttend
+					userType: '', 
+					github: '', 
+					previousProject: '', 
+					whyAttend: '', 
 				});
 				setIsFormExpanded(false);
 			}
@@ -94,6 +94,7 @@ export default function Hackathon() {
 				<div className={s.item}>
 					<h3>Prizes</h3>
 					<p><i>To be revealed soon</i></p>
+					<div className={s.spacer1}></div>
 					<p>1st Place: $xxxx</p>
 					<p>2nd Place: $xxxx</p>
 					<p>3rd Place: $xxxx</p>
@@ -102,7 +103,9 @@ export default function Hackathon() {
 					<h3>Location</h3>
 					<p>Boston University</p>
 					<p>Photonics Center</p>
-					<p>8 St Mary's St, <br></br> Boston, MA 02215</p>
+					<div className={s.spacer1}></div>
+					<p>8 St Mary's St,</p>
+					<p> Boston, MA 02215</p>
 				</div>
 			</div>
 			{isClient && (
