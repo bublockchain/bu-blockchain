@@ -85,7 +85,7 @@ export default function Hackathon() {
 	return (
 		<div className={`${oxygen_mono.className} ${s.main}`}>
 			<h1>BeanTown Showdown</h1>
-			<h2>Hackathon and Pitchathon</h2>
+			<h2>Hackathon and Business Case Competition</h2>
 			<div className={s.info}>
 				<div className={s.item}>
 					<h3>Date</h3>
