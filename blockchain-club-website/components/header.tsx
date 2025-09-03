@@ -14,17 +14,15 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0 flex items-center space-x-3">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">BUB</span>
-              </div>
-              <h1 className="text-xl font-bold text-primary">BU Blockchain</h1>
+              <img src="/bublogo.png" alt="BU Blockchain Logo" className="w-10 h-10 object-contain" />
+              <h1 className="text-xl font-bold text-white">BU Blockchain</h1>
             </Link>
           </div>
 
           <nav className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <Link href="/about" className="text-foreground hover:text-primary transition-colors">
-                About
+              <Link href="/sponsors" className="text-foreground hover:text-primary transition-colors">
+                Sponsors
               </Link>
               <Link href="/resources" className="text-foreground hover:text-primary transition-colors">
                 Resources
@@ -54,8 +52,8 @@ export function Header() {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t">
-              <Link href="/about" className="block px-3 py-2 text-foreground hover:text-primary">
-                About
+              <Link href="/sponsors" className="block px-3 py-2 text-foreground hover:text-primary">
+                Sponsors
               </Link>
               <Link href="/resources" className="block px-3 py-2 text-foreground hover:text-primary">
                 Resources

@@ -31,8 +31,8 @@ export function Footer() {
             <h4 className="font-semibold text-foreground mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
-                  About
+                <a href="#sponsors" className="text-muted-foreground hover:text-primary transition-colors">
+                  Sponsors
                 </a>
               </li>
               <li>
