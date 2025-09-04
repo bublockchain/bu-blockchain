@@ -34,8 +34,8 @@ export function Header() {
             <nav className="hidden md:block">
               <div className="flex items-baseline space-x-8">
                 
-                <Link href="/sponsors" className={`text-foreground hover:text-primary transition-colors ${pathname === '/sponsors' ? 'text-red-500 border-b-2 border-red-500' : ''}`}>
-                  Sponsors
+                <Link href="/sponsorship" className={`text-foreground hover:text-primary transition-colors ${pathname === '/sponsorship' ? 'text-red-500 border-b-2 border-red-500' : ''}`}>
+                  Sponsorship
                 </Link>
                 <Link href="/resources" className={`text-foreground hover:text-primary transition-colors ${pathname === '/resources' ? 'text-red-500 border-b-2 border-red-500' : ''}`}>
                   Resources
@@ -50,8 +50,8 @@ export function Header() {
             </nav>
 
             <div className="hidden md:block">
-              <Button asChild className={`group ${pathname === '/sponsors' ? 'bg-red-500 text-white hover:bg-red-600' : ''}`}>
-                <Link href="/sponsors">
+              <Button asChild className={`group ${pathname === '/sponsorship' ? 'bg-red-500 text-white hover:bg-red-600' : ''}`}>
+                <Link href="/sponsorship">
                   Become a Sponsor
                   <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform duration-200" />
                 </Link>
@@ -71,8 +71,8 @@ export function Header() {
                 <Link href="/team" className={`block px-3 py-2 text-foreground hover:text-primary ${pathname === '/team' ? 'text-red-500 border-b-2 border-red-500' : ''}`}>
                   Team
                 </Link>
-                <Link href="/sponsors" className={`block px-3 py-2 text-foreground hover:text-primary ${pathname === '/sponsors' ? 'text-red-500 border-b-2 border-red-500' : ''}`}>
-                  Sponsors
+                <Link href="/sponsorship" className={`block px-3 py-2 text-foreground hover:text-primary ${pathname === '/sponsorship' ? 'text-red-500 border-b-2 border-red-500' : ''}`}>
+                  Sponsorship
                 </Link>
                 <Link href="/resources" className={`block px-3 py-2 text-foreground hover:text-primary ${pathname === '/resources' ? 'text-red-500 border-b-2 border-red-500' : ''}`}>
                   Resources
@@ -81,8 +81,8 @@ export function Header() {
                   Contact
                 </Link>
                 <div className="px-3 py-2">
-                  <Button className={`w-full group ${pathname === '/sponsors' ? 'bg-red-500 text-white hover:bg-red-600' : ''}`} asChild>
-                    <Link href="/sponsors">
+                  <Button className={`w-full group ${pathname === '/sponsorship' ? 'bg-red-500 text-white hover:bg-red-600' : ''}`} asChild>
+                    <Link href="/sponsorship">
                       Become a Sponsor
                       <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-200" />
                     </Link>

@@ -1,9 +1,23 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Users, Calendar, BookOpen } from "lucide-react"
 import { NextMeeting } from "@/components/next-meeting"
 import { AnimatedBlockchain } from "@/components/animated-blockchain"
+import { socialLinks } from "@/data/links"
 
 export function Hero() {
+  const handleJoinClub = () => {
+    window.open(socialLinks.email_list_form, '_blank', 'noopener,noreferrer');
+  };
+
+  const handleLearnMore = () => {
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative pt-16 lg:pt-20 pb-12 lg:pb-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -15,15 +29,15 @@ export function Hero() {
               <span className="text-primary block"><AnimatedBlockchain /> Club</span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-muted-foreground text-pretty">
-              Join the future of technology. Learn, build, and innovate with blockchain technology alongside fellow
+              Join the future of technology. Learn about, build, and innovate with blockchain technology alongside fellow
               students and industry professionals.
             </p>
             <div className="mt-10 flex items-center gap-x-6">
-              <Button size="lg" className="text-lg px-8 group">
+              <Button size="lg" className="text-lg px-8 group" onClick={handleJoinClub}>
                 Join the Club
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 bg-transparent">
+              <Button variant="outline" size="lg" className="text-lg px-8 bg-transparent" onClick={handleLearnMore}>
                 Learn More
               </Button>
             </div>
@@ -34,7 +48,7 @@ export function Hero() {
                   <Users className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="mt-4 text-base font-semibold text-foreground">Active Community</h3>
-                <p className="mt-2 text-sm text-muted-foreground">200+ passionate students</p>
+                <p className="mt-2 text-sm text-muted-foreground">Meet passionate people</p>
               </div>
               <div className="text-center sm:text-left">
                 <div className="mx-auto sm:mx-0 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">

@@ -46,7 +46,7 @@ export function NextMeeting() {
       )}
       <div className="mb-6">
         <h2 className="text-2xl font-bold tracking-tight text-foreground">
-          Next Meeting
+          Next Meeting <span className="ml-5 text-neutral-500">(We'd love to have you!)</span>
         </h2>
       </div>
       

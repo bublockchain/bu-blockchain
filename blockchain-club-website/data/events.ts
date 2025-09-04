@@ -12,7 +12,7 @@ export interface Event {
 export const events: Event[] = [
   {
     title: "Smart Contract Development Workshop",
-    date: "March 15, 2024",
+    date: "September 15, 2025",
     time: "6:00 PM - 8:00 PM",
     location: "CAS 211",
     description: "Learn to build and deploy smart contracts on Ethereum using Solidity.",
@@ -22,7 +22,7 @@ export const events: Event[] = [
   },
   {
     title: "Guest Speaker: DeFi Innovation",
-    date: "March 22, 2024",
+    date: "September 22, 2025",
     time: "7:00 PM - 8:30 PM",
     location: "GSU Auditorium",
     description: "Industry expert discusses the latest trends in decentralized finance.",
@@ -31,7 +31,7 @@ export const events: Event[] = [
   },
   {
     title: "Blockchain Hackathon 2024",
-    date: "April 5-7, 2024",
+    date: "September 27-29th, 2025",
     time: "48 Hours",
     location: "Photonics Center",
     description: "Build innovative blockchain solutions and compete for prizes.",

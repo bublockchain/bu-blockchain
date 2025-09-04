@@ -1,5 +1,5 @@
 import { Hero } from "@/components/hero"
-import { Sponsors } from "@/components/sponsors"
+import { About } from "@/components/about"
 import { Partnerships } from "@/components/partnerships"
 import { Events } from "@/components/events"
 import { Footer } from "@/components/footer"
@@ -11,7 +11,7 @@ export default function HomePage() {
         <Hero />
         
         <Partnerships />
-        <Sponsors />
+        <About />
         <Events />
       </main>
       <Footer />
