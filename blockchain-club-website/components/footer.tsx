@@ -1,4 +1,5 @@
-import { Github, Twitter, Linkedin, Mail } from "lucide-react"
+import { Github, Twitter, Linkedin, Mail, Instagram, MessageCircle, MessageSquare } from "lucide-react"
+import { socialLinks } from "@/data/links"
 
 export function Footer() {
   return (
@@ -12,17 +13,20 @@ export function Footer() {
               hands-on experience and industry connections.
             </p>
             <div className="flex space-x-4 mt-6">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Github className="h-5 w-5" />
+              <a href={socialLinks.instagram} className="text-muted-foreground hover:text-primary transition-colors">
+                <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href={socialLinks.telegram} className="text-muted-foreground hover:text-primary transition-colors">
+                <MessageCircle className="h-5 w-5" />
+              </a>
+              <a href={socialLinks.x} className="text-muted-foreground hover:text-primary transition-colors">
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Linkedin className="h-5 w-5" />
+              <a href={socialLinks.discord} className="text-muted-foreground hover:text-primary transition-colors">
+                <MessageSquare className="h-5 w-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Mail className="h-5 w-5" />
+              <a href={socialLinks.linkedin} className="text-muted-foreground hover:text-primary transition-colors">
+                <Linkedin className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -31,23 +35,28 @@ export function Footer() {
             <h4 className="font-semibold text-foreground mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#sponsors" className="text-muted-foreground hover:text-primary transition-colors">
-                  Sponsors
+                <a href={socialLinks.instagram} className="text-muted-foreground hover:text-primary transition-colors">
+                  Instagram
                 </a>
               </li>
               <li>
-                <a href="#events" className="text-muted-foreground hover:text-primary transition-colors">
-                  Events
+                <a href={socialLinks.telegram} className="text-muted-foreground hover:text-primary transition-colors">
+                  Telegram
                 </a>
               </li>
               <li>
-                <a href="#resources" className="text-muted-foreground hover:text-primary transition-colors">
-                  Resources
+                <a href={socialLinks.x} className="text-muted-foreground hover:text-primary transition-colors">
+                  X (Twitter)
                 </a>
               </li>
               <li>
-                <a href="#membership" className="text-muted-foreground hover:text-primary transition-colors">
-                  Join Us
+                <a href={socialLinks.discord} className="text-muted-foreground hover:text-primary transition-colors">
+                  Discord
+                </a>
+              </li>
+              <li>
+                <a href={socialLinks.linkedin} className="text-muted-foreground hover:text-primary transition-colors">
+                  LinkedIn
                 </a>
               </li>
             </ul>
@@ -64,7 +73,7 @@ export function Footer() {
         </div>
 
         <div className="border-t mt-12 pt-8 text-center text-muted-foreground">
-          <p>&copy; 2024 Boston University Blockchain Club. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Boston University Blockchain Club. All rights reserved.</p>
         </div>
       </div>
     </footer>

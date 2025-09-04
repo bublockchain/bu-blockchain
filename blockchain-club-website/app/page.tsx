@@ -9,8 +9,9 @@ export default function HomePage() {
     <div className="min-h-screen bg-background">
       <main>
         <Hero />
-        <Sponsors />
+        
         <Partnerships />
+        <Sponsors />
         <Events />
       </main>
       <Footer />

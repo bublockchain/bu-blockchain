@@ -1,17 +1,18 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Users, Calendar, BookOpen } from "lucide-react"
 import { NextMeeting } from "@/components/next-meeting"
+import { AnimatedBlockchain } from "@/components/animated-blockchain"
 
 export function Hero() {
   return (
-    <section className="relative py-12 lg:py-16">
+    <section className="relative pt-16 lg:pt-20 pb-12 lg:pb-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left half - Hero content */}
           <div>
-            <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl text-balance">
+            <h1 className="text-4xl tracking-tight text-foreground sm:text-5xl lg:text-6xl text-balance font-kode-mono" style={{fontFamily: 'Kode Mono', fontWeight: 700 }}>
               Boston University
-              <span className="text-primary block">Blockchain Club</span>
+              <span className="text-primary block"><AnimatedBlockchain /> Club</span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-muted-foreground text-pretty">
               Join the future of technology. Learn, build, and innovate with blockchain technology alongside fellow

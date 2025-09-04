@@ -9,9 +9,12 @@ import { Header } from "@/components/header"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "v0 App",
+  title: "BU Blockchain",
   description: "Created with v0",
   generator: "v0.app",
+  icons: {
+    icon: "/bublogo.png",
+  },
 }
 
 export default function RootLayout({
@@ -21,6 +24,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <link 
+          href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" 
+          rel="stylesheet" 
+        />
+      </head>
       <body className={`font-sans bg-background text-foreground ${GeistSans.variable} ${GeistMono.variable}`}>
         <Header />
         <Suspense fallback={null}>

@@ -3,32 +3,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Infinite scroll animation for partnerships */
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.animate-scroll {
-  animation: scroll 30s linear infinite;
-  width: calc(200% + 16rem);
-  transition: animation-play-state 0.2s ease-in-out;
-}
-
-.animate-scroll:hover,
-.animate-scroll:has(:hover) {
-  animation-play-state: paused;
-}
-
-/* Fallback for browsers that don't support :has() */
-.animate-scroll.paused {
-  animation-play-state: paused;
-}
-
 :root {
   /* Updated color scheme */
   --background: oklch(0.15 0.02 25); /* #342B2B - Dark brown background */
