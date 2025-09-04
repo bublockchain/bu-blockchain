@@ -11,20 +11,20 @@
   --card-foreground: oklch(1 0 0); /* #FFFFFF - Text color for cards */
   --popover: oklch(0.15 0.02 25); /* #342B2B - Background for popovers */
   --popover-foreground: oklch(1 0 0); /* #FFFFFF - Text color for popovers */
-  --primary: oklch(0.65 0.20 25); /* #EF4040 - Red primary color */
+  --primary: oklch(0.55 0.22 25); /* #CC0000 - Red primary color */
   --primary-foreground: oklch(1 0 0); /* #FFFFFF - Text on primary */
   --secondary: oklch(0.45 0.08 25); /* #9D7474 - Brownish red secondary */
   --secondary-foreground: oklch(1 0 0); /* #FFFFFF - Text on secondary */
   --muted: oklch(0.2 0.02 25); /* Muted background */
   --muted-foreground: oklch(0.85 0.01 25); /* #D4C9C9 - Secondary text */
-  --accent: oklch(0.65 0.20 25); /* #EF4040 - Red accent elements */
+  --accent: oklch(0.55 0.22 25); /* #CC0000 - Red accent elements */
   --accent-foreground: oklch(1 0 0); /* #FFFFFF - Text on accent */
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(1 0 0);
   --border: oklch(0.25 0.02 25); /* Border color */
   --input: oklch(0.18 0.02 25); /* Input background */
-  --ring: oklch(0.65 0.20 25 / 0.5); /* Red ring with opacity */
-  --chart-1: oklch(0.65 0.20 25);
+  --ring: oklch(0.55 0.22 25 / 0.5); /* Red ring with opacity */
+  --chart-1: oklch(0.55 0.22 25);
   --chart-2: oklch(0.45 0.08 25);
   --chart-3: oklch(0.85 0.01 25);
   --chart-4: oklch(0.75 0.15 25);
@@ -32,7 +32,7 @@
   --radius: 0.5rem;
   --sidebar: oklch(0.18 0.02 25); /* Sidebar background */
   --sidebar-foreground: oklch(1 0 0); /* Sidebar text */
-  --sidebar-primary: oklch(0.65 0.20 25); /* Sidebar primary */
+  --sidebar-primary: oklch(0.55 0.22 25); /* Sidebar primary */
   --sidebar-primary-foreground: oklch(1 0 0);
   --sidebar-accent: oklch(0.45 0.08 25); /* Sidebar accent */
   --sidebar-accent-foreground: oklch(1 0 0);
