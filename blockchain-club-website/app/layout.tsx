@@ -31,6 +31,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`font-sans bg-background text-foreground ${GeistSans.variable} ${GeistMono.variable}`}>
+        <div className="radial-gradient-bg" />
         <Header />
         <Suspense fallback={null}>
           <PageTransition>

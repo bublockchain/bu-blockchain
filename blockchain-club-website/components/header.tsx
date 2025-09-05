@@ -33,16 +33,16 @@ export function Header() {
             <nav className="hidden md:block">
               <div className="flex items-baseline space-x-8">
                 
-                <Link href="/sponsorship" className={`text-foreground hover:text-primary transition-colors ${pathname === '/sponsorship' ? 'text-primary' : ''}`}>
+                <Link href="/sponsorship" className={`header-nav-link text-foreground hover:text-primary transition-colors ${pathname === '/sponsorship' ? 'text-primary' : ''}`}>
                   Sponsorship
                 </Link>
-                <Link href="/resources" className={`text-foreground hover:text-primary transition-colors ${pathname === '/resources' ? 'text-primary' : ''}`}>
+                <Link href="/resources" className={`header-nav-link text-foreground hover:text-primary transition-colors ${pathname === '/resources' ? 'text-primary' : ''}`}>
                   Resources
                 </Link>
-                <Link href="/team" className={`text-foreground hover:text-primary transition-colors ${pathname === '/team' ? 'text-primary' : ''}`}>
+                <Link href="/team" className={`header-nav-link text-foreground hover:text-primary transition-colors ${pathname === '/team' ? 'text-primary' : ''}`}>
                   Team
                 </Link>
-                <Link href="/contact" className={`text-foreground hover:text-primary transition-colors ${pathname === '/contact' ? 'text-primary' : ''}`}>
+                <Link href="/contact" className={`header-nav-link text-foreground hover:text-primary transition-colors ${pathname === '/contact' ? 'text-primary' : ''}`}>
                   Contact
                 </Link>
               </div>
@@ -59,16 +59,16 @@ export function Header() {
           {isMenuOpen && (
             <div className="md:hidden">
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t">
-                <Link href="/team" className={`block px-3 py-2 text-foreground hover:text-primary ${pathname === '/team' ? 'text-primary' : ''}`}>
+                <Link href="/team" className={`header-nav-link block px-3 py-2 text-foreground hover:text-primary ${pathname === '/team' ? 'text-primary' : ''}`}>
                   Team
                 </Link>
-                <Link href="/sponsorship" className={`block px-3 py-2 text-foreground hover:text-primary ${pathname === '/sponsorship' ? 'text-primary' : ''}`}>
+                <Link href="/sponsorship" className={`header-nav-link block px-3 py-2 text-foreground hover:text-primary ${pathname === '/sponsorship' ? 'text-primary' : ''}`}>
                   Sponsorship
                 </Link>
-                <Link href="/resources" className={`block px-3 py-2 text-foreground hover:text-primary ${pathname === '/resources' ? 'text-primary' : ''}`}>
+                <Link href="/resources" className={`header-nav-link block px-3 py-2 text-foreground hover:text-primary ${pathname === '/resources' ? 'text-primary' : ''}`}>
                   Resources
                 </Link>
-                <Link href="/contact" className={`block px-3 py-2 text-foreground hover:text-primary ${pathname === '/contact' ? 'text-primary' : ''}`}>
+                <Link href="/contact" className={`header-nav-link block px-3 py-2 text-foreground hover:text-primary ${pathname === '/contact' ? 'text-primary' : ''}`}>
                   Contact
                 </Link>
               </div>
