@@ -6,7 +6,7 @@ const CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234567
 const TARGET_WORD = "Blockchain"
 
 export function AnimatedBlockchain() {
-  const [displayText, setDisplayText] = useState(TARGET_WORD.split(''))
+  const [displayText, setDisplayText] = useState(TARGET_WORD.split('').map(() => ''))
   const [isAnimating, setIsAnimating] = useState(true)
 
   useEffect(() => {
@@ -91,7 +91,7 @@ export function AnimatedBlockchain() {
     <span className="inline-block">
       {displayText.map((char, index) => (
         <span key={index} className="inline-block">
-          {char}
+          {char || TARGET_WORD[index]}
         </span>
       ))}
     </span>
