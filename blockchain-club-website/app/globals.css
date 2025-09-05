@@ -44,6 +44,7 @@
   --gradient-blue: #60cbd0;
   --gradient-pink: #e1557d;
   --gradient-purple: #804492;
+  --gradient-yellow: #f1bb21;
 }
 
 .dark {
@@ -86,6 +87,7 @@
   --gradient-blue: #60cbd0;
   --gradient-pink: #e1557d;
   --gradient-purple: #804492;
+  --gradient-yellow: #f1bb21;
 }
 
 @theme inline {
@@ -154,28 +156,14 @@
     margin: 0;
     padding: 0;
     background: 
-      radial-gradient(
-        ellipse 80% 70% at 0% 0%,
-        var(--gradient-white) 0%,
-        var(--gradient-blue) 20%,
-        var(--gradient-pink) 40%,
-        var(--gradient-purple) 60%,
-        transparent 100%
-      ),
-      radial-gradient(
-        ellipse 80% 70% at 100% 0%,
-        var(--gradient-white) 0%,
-        var(--gradient-blue) 20%,
-        var(--gradient-pink) 40%,
-        var(--gradient-purple) 60%,
-        transparent 100%
-      ),
+      url('/landing_bg.png') no-repeat center top,
       linear-gradient(
         to bottom,
         transparent 0%,
-        transparent 50%,
-        /* rgba(255, 255, 255, 0.5) 75%, */
-        rgba(255, 255, 255, 0) 100%
+        transparent 30%,
+        /* rgba(255, 255, 255, 0.3) 10%, */
+        rgba(255, 255, 255, 0) 70%
       );
+    background-size: 100% 85%;
   }
 }

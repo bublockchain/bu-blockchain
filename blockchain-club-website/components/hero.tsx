@@ -24,21 +24,18 @@ export function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left half - Hero content */}
           <div>
-            <h1 className="text-4xl tracking-tight text-foreground sm:text-5xl lg:text-6xl text-balance font-kode-mono" style={{fontFamily: 'Kode Mono', fontWeight: 700 }}>
+            <h1 className="text-4xl tracking-tight text-foreground sm:text-5xl lg:text-6xl text-balance font-kode-mono" style={{fontFamily: 'Kode Mono', fontWeight: 700, textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>
               Boston University
-              <span className="text-primary block"><AnimatedBlockchain /> Club</span>
+              <span className="text-primary block" style={{textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}><AnimatedBlockchain /> Club</span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-muted-foreground text-pretty">
               Join the future of technology. Learn about, build, and innovate with blockchain technology alongside fellow
               students and industry professionals.
             </p>
             <div className="mt-10 flex items-center gap-x-6">
-              <Button size="lg" className="text-lg px-8 group" onClick={handleJoinClub}>
-                Join the Club
-                <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-              </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 bg-transparent" onClick={handleLearnMore}>
+              <Button size="lg" className="text-lg px-8 group" onClick={handleLearnMore}>
                 Learn More
+                <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Button>
             </div>
 
