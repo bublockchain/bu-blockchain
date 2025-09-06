@@ -26,59 +26,45 @@ export default function SponsorshipPage() {
 
           <div className="space-y-8">
             <section className="bg-card p-6 rounded-lg border">
-              <h2 className="text-2xl font-semibold mb-4 text-primary">hackathons - BU blockchain around town:</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-primary">Hackathons - BU Blockchain Around Town</h2>
               <p className="text-lg leading-relaxed text-muted-foreground">
-                We are proud to have won our first three hackathons at first
-                place, each, with the development of a builder subgroup in BU
-                Blockchain. The hackathon team is open to all, and we plan to
-                encourage collaboration. This may include sponsoring certain
-                talented builders' travel costs who have continued to impress us
-                through the year. We also encourage non-technical
-                participation through ideathons held jointly by hackathons.
+                Our developer community represents the brightest minds in blockchain technology at Boston University. 
+                Our members deliver innovative solutions, from smart contracts and DeFi protocols to cutting-edge 
+                Web3 applications. We actively participate in hackathons, build real-world projects, and collaborate on 
+                open-source initiatives. Our diverse talent pool includes full-stack developers, blockchain architects, 
+                and emerging tech leaders shaping the future of decentralized technology.
               </p>
             </section>
 
             <section className="bg-card p-6 rounded-lg border">
-              <h2 className="text-2xl font-semibold mb-4 text-primary">co-innovation and collaboration:</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-primary">Co-Innovation and Collaboration</h2>
               <p className="text-lg leading-relaxed text-muted-foreground">
-                Ability to collaborate with
-                students and on research,
-                insights and fostering
-                innovation. This can yield novel
-                applications, advancements in
-                technology, and mutually
+                Ability to collaborate with students and on research, insights and fostering
+                innovation. This can yield novel applications, advancements in technology, and mutually
                 beneficial outcomes.
               </p>
             </section>
 
             <section className="bg-card p-6 rounded-lg border">
-              <h2 className="text-2xl font-semibold mb-4 text-primary">recruitment and talent acquisition:</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-primary">Recruitment and Talent Acquisition</h2>
               <p className="text-lg leading-relaxed text-muted-foreground">
-                Ability to connect with our talent
-                pool & receive resumes for any
-                work opportunity as well as to
-                create a talent pipeline for any
-                initiative, open or closed-source.
+                Ability to connect with our talent pool and receive resumes for any work opportunity,
+                as well as to create a talent pipeline for any initiative, open or closed-source.
               </p>
             </section>
 
             <section className="bg-card p-6 rounded-lg border">
-              <h2 className="text-2xl font-semibold mb-4 text-primary">product development and brand exposure</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-primary">Product Development and Brand Exposure</h2>
               <p className="text-lg leading-relaxed text-muted-foreground">
-                Provides opportunity to test
-                solutions and gain student
-                insight, while also enhancing
-                brand visibility, thought
-                leadership, and potential
-                opportunities through
-                university engagement.
+                Provides opportunity to test solutions and gain student insight, while also enhancing
+                brand visibility, thought leadership, and potential opportunities through university engagement.
               </p>
             </section>
 
             <section className="bg-card p-6 rounded-lg border">
-              <h2 className="text-2xl font-semibold mb-4 text-primary">club ethos</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-primary">Club Ethos</h2>
               <p className="text-lg leading-relaxed text-muted-foreground">
-                we see a future where financial, economic, and social justice are all at
+                We see a future where financial, economic, and social justice are all at
                 the forefront of our global society. We see a future where, regardless of
                 cost, knowledge barriers, and other supposed societal restrictions, all
                 of our members have an equal opportunity to succeed. As such, we do not

@@ -11,11 +11,11 @@ export interface Event {
 
 export const events: Event[] = [
   {
-    title: "Smart Contract Development Workshop",
+    title: "Welcome to BU Blockchain Club!",
     date: "September 11, 2025",
     time: "6:30 PM - 8:00 PM",
     location: "CDS 264",
-    description: "Learn to build and deploy smart contracts on Ethereum using Solidity.",
+    description: "Learn about the BU Blockchain Club, our mission, and how to get involved in the blockchain community at BU.",
     callout: "First Meeting!",
     url: "https://example.com/smart-contract-workshop",
     startTimeUtc: "2025-09-15T23:00:00.000Z", // 6:00 PM EDT = 11:00 PM UTC
