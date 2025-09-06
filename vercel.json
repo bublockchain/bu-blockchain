@@ -1,3 +1,5 @@
 {
-  "rootDirectory": "client"
+  "rootDirectory": "client",
+  "installCommand": "pnpm install",
+  "buildCommand": "pnpm build"
 }
