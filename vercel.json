@@ -1,5 +1,7 @@
 {
-  "buildCommand": "cd client && pnpm build",
-  "outputDirectory": "client/.next",
-  "installCommand": "cd client && pnpm install"
+  "functions": {
+    "app/**/*.tsx": {
+      "runtime": "nodejs22.x"
+    }
+  }
 }
