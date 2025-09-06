@@ -1,7 +1,4 @@
 {
-  "rootDirectory": "client",
-  "installCommand": "pnpm install",
-  "buildCommand": "pnpm build",
   "functions": {
     "app/**/*.tsx": {
       "runtime": "nodejs22.x"
