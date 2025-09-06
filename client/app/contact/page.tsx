@@ -29,35 +29,34 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-background">
       <main className="container mx-auto px-4 py-16">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-xl mx-auto">
           <h1 className="text-4xl font-bold text-center mb-4">Contact Us</h1>
           <p className="text-xl text-center text-muted-foreground mb-12">
             Get in touch with BU Blockchain - we'd love to hear from you!
           </p>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="space-y-2">
-                <Label htmlFor="name">Full Name</Label>
-                <Input
-                  id="name"
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  placeholder="Your full name"
-                  required
-                />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
-                <Input
-                  id="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  placeholder="your.email@bu.edu"
-                  required
-                />
-              </div>
+          <form onSubmit={handleSubmit} className="space-y-6 bg-card border border-border rounded-lg p-6">
+            <div className="space-y-2">
+              <Label htmlFor="name">Full Name</Label>
+              <Input
+                id="name"
+                value={formData.name}
+                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                placeholder="Your full name"
+                required
+              />
+            </div>
+
+            <div className="space-y-2">
+              <Label htmlFor="email">Email</Label>
+              <Input
+                id="email"
+                type="email"
+                value={formData.email}
+                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                placeholder="your.email@bu.edu"
+                required
+              />
             </div>
 
             <div className="space-y-2">
@@ -94,13 +93,6 @@ export default function ContactPage() {
             </Button>
           </form>
 
-          <div className="mt-12 text-center">
-            <h3 className="text-lg font-semibold mb-4">Other Ways to Reach Us</h3>
-            <div className="space-y-2 text-muted-foreground">
-              <p>Email: contact@bublockchain.com</p>
-              <p>Follow us on social media for updates</p>
-            </div>
-          </div>
         </div>
       </main>
       <Footer />

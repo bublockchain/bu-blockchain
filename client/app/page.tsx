@@ -1,18 +1,21 @@
 import { Hero } from "@/components/hero"
-import { Sponsors } from "@/components/sponsors"
+import { About } from "@/components/about"
 import { Partnerships } from "@/components/partnerships"
 import { Events } from "@/components/events"
 import { Footer } from "@/components/footer"
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <main>
-        <Hero />
-        
-        <Partnerships />
-        <Sponsors />
-        <Events />
+        <div className="bg-transparent">
+          <Hero />
+        </div>
+        <div className="bg-background">
+          <Partnerships />
+          <About />
+          <Events />
+        </div>
       </main>
       <Footer />
     </div>

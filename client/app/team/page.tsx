@@ -44,7 +44,7 @@ export default function TeamPage() {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
+        {/* <div className="mt-16 text-center">
           <div className="bg-red-950/20 border border-red-900/30 rounded-xl p-8 max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-white mb-4">E-Board Commitment</h2>
             <p className="text-gray-300 mb-6">All executive board members are expected to:</p>
@@ -71,7 +71,7 @@ export default function TeamPage() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </main>
 
       <Footer />

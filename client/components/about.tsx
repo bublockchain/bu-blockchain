@@ -1,9 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Target, Eye, Handshake } from "lucide-react"
 
-export function Sponsors() {
+export function About() {
   return (
-    <section id="sponsors" className="py-20 bg-muted/30">
+    <section id="about" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">About Our Club</h2>

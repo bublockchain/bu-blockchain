@@ -11,7 +11,7 @@ interface PageTransitionProps {
 // Define the navigation order
 const navigationOrder = [
   '/',
-  '/sponsors',
+  '/sponsorship',
   '/resources',
   '/team',
   '/contact'

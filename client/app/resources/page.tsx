@@ -9,6 +9,7 @@ export default function ResourcesPage() {
       category: "Getting Started",
       icon: <Book className="w-5 h-5" />,
       items: [
+        { title: "BUB Tutorials", url: "https://github.com/bublockchain/solidity-101", description: "Solidity 101 course and blockchain development lessons" },
         {
           title: "Blockchain Basics",
           url: "https://ethereum.org/en/learn/",
@@ -27,7 +28,7 @@ export default function ResourcesPage() {
       icon: <Code className="w-5 h-5" />,
       items: [
         { title: "Remix IDE", url: "https://remix.ethereum.org/", description: "Browser-based Solidity IDE" },
-        { title: "Hardhat", url: "https://hardhat.org/", description: "Ethereum development environment" },
+        { title: "Foundry", url: "https://getfoundry.sh", description: "Etherium development environment" },
         { title: "MetaMask", url: "https://metamask.io/", description: "Web3 wallet and gateway to blockchain apps" },
       ],
     },

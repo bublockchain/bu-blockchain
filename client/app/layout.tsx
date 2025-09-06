@@ -6,6 +6,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import { PageTransition } from "@/components/page-transition"
 import { Header } from "@/components/header"
+import { ConditionalGradientBg } from "@/components/conditional-gradient-bg"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -31,6 +32,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`font-sans bg-background text-foreground ${GeistSans.variable} ${GeistMono.variable}`}>
+        <ConditionalGradientBg />
         <Header />
         <Suspense fallback={null}>
           <PageTransition>
