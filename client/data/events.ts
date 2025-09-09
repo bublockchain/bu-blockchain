@@ -17,7 +17,7 @@ export const events: Event[] = [
     location: "CDS 264",
     description: "Learn about the BU Blockchain Club, our mission, and how to get involved in the blockchain community at BU.",
     callout: "First Meeting!",
-    url: "https://example.com/smart-contract-workshop",
+    url: "https://luma.com/p5p0rhn5",
     startTimeUtc: "2025-09-15T23:00:00.000Z", // 6:00 PM EDT = 11:00 PM UTC
   },
   {
