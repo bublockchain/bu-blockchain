@@ -14,7 +14,8 @@ export const teamMembers: TeamMember[] = [
       "Coordinate speaker outreach and university/club partnerships",
       "Represent BUB at official functions and external meetings",
       "Chair E-board meetings and set the semester agenda"
-    ]
+    ],
+  profilePhoto: "/members/michael.png"
   },
   {
     name: "Elina Zang",
@@ -24,7 +25,8 @@ export const teamMembers: TeamMember[] = [
       "Maintain communication flow across all E-board roles",
       "Support the President and act as second-in-command",
       "Organize semester planning and internal retrospectives"
-    ]
+  ],
+  profilePhoto: "/members/elina.png"
   },
   {
     name: "Alvin Sun",
@@ -34,7 +36,8 @@ export const teamMembers: TeamMember[] = [
       "Track expenses, reimbursements, and sponsorship funds",
       "Maintain transparent records and submit semester reports",
       "Work with other leads on cost estimates and event funding"
-    ]
+  ],
+  profilePhoto: "/members/alvin.png"
   },
   {
     name: "Daniel Lung",
@@ -44,7 +47,8 @@ export const teamMembers: TeamMember[] = [
       "Book meeting rooms and event spaces",
       "Track minutes and follow-up items from E-board meetings",
       "Ensure members meet active membership requirements"
-    ]
+  ],
+  profilePhoto: "/members/daniel.png"
   },
   {
     name: "Russell Joarder",
@@ -54,7 +58,8 @@ export const teamMembers: TeamMember[] = [
       "Support and potentially lead both financial and technical meetings",
       "Propose process improvements and help define club priorities",
       "Support initiative launches and member experiences"
-    ]
+  ],
+  profilePhoto: "/members/russell.png"
   },
   {
     name: "Gabriel Ginsberg",
@@ -64,7 +69,8 @@ export const teamMembers: TeamMember[] = [
       "Support technical needs at events (setup, demos, GitHub)",
       "Maintain any internal tools or documentation",
       "Mentor members working on technical projects"
-    ]
+  ],
+  profilePhoto: "/members/gabriel.png"
   },
   {
     name: "Christie Wu",
@@ -75,7 +81,8 @@ export const teamMembers: TeamMember[] = [
       "Document events, boost online engagement, and maintain a cohesive visual identity",
       "Collaborate with Events, Tech, and Strategy for campaign coordination",
       "Create social media post plan for the month"
-    ]
+  ],
+  profilePhoto: "/members/christie.png"
   },
   
   {
@@ -86,6 +93,7 @@ export const teamMembers: TeamMember[] = [
       "Organize onboarding sessions, team-building, and feedback loops",
       "Serve as the BUB representative to BU Ignite",
       "Facilitate E-board evaluations and help resolve internal concerns"
-    ]
+  ],
+  profilePhoto: "/members/osayamen.png"
   }
 ]
