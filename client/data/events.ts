@@ -23,7 +23,7 @@ export const events: Event[] = [
   {
     title: "Guest Speaker: DeFi Innovation",
     date: "November 20, 2025",
-    time: "6:30 PM - 8:00 PM",
+    time: "6:30 PM - 7:30 PM",
     location: "CDS 264",
     description: "Industry expert discusses the latest trends in decentralized finance.",
     url: "https://example.com/defi-speaker-event",
