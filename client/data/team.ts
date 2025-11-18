@@ -19,7 +19,7 @@ export const teamMembers: TeamMember[] = [
   },
   {
     name: "Elina Zang",
-    position: "Vice President",
+    position: "Executive Vice President",
     responsibilities: [
       "Oversee daily operations",
       "Maintain communication flow across all E-board roles",
