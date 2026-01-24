@@ -21,7 +21,7 @@ export const events: Event[] = [
   },
   {
     title: "First Meeting of Spring Semester",
-    date: "January 23, 2026",
+    date: "January 28, 2026",
     time: "6:30 PM",
     location: "CDS 262",
     description: "Everyone is welcome to come!",
