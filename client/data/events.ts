@@ -13,11 +13,11 @@ export const events: Event[] = [
   {
     title: "Splash 2.0 Club Fair",
     date: "January 24, 2026",
-    time: "11:30 AM",
+    time: "12:00 PM",
     location: "GSU Ballroom",
     description: "Come and say hi to learn more about the club!",
     url: "https://bublockchain.com",
-    startTimeUtc: "2026-01-24T16:30:00.000Z", // 11:30 AM EST = 4:30 PM UTC
+    startTimeUtc: "2026-01-24T17:00:00.000Z", // 12:00 PM EST = 5:00 PM UTC
   },
   {
     title: "First Meeting of Spring Semester",
