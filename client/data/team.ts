@@ -8,7 +8,7 @@ export interface TeamMember {
 export const teamMembers: TeamMember[] = [
   {
     name: "Michael Sun",
-    position: "President",
+    position: "Co-President",
     responsibilities: [
       "Lead the club vision, culture, and long-term strategy",
       "Coordinate speaker outreach and university/club partnerships",
@@ -19,7 +19,7 @@ export const teamMembers: TeamMember[] = [
   },
   {
     name: "Elina Zang",
-    position: "Executive Vice President",
+    position: "Co-President",
     responsibilities: [
       "Oversee daily operations",
       "Maintain communication flow across all E-board roles",
@@ -27,6 +27,17 @@ export const teamMembers: TeamMember[] = [
       "Organize semester planning and internal retrospectives"
   ],
   profilePhoto: "/members/elina.png"
+  },
+  {
+    name: "Gabriel Ginsberg",
+    position: "Executive Vice President",
+    responsibilities: [
+      "Lead all technical workshops and blockchain development initiatives",
+      "Support technical needs at events (setup, demos, GitHub)",
+      "Maintain any internal tools or documentation",
+      "Mentor members working on technical projects"
+  ],
+  profilePhoto: "/members/gabriel.png"
   },
   {
     name: "Alvin Sun",
@@ -52,7 +63,7 @@ export const teamMembers: TeamMember[] = [
   },
   {
     name: "Russell Joarder",
-    position: "VP of Strategy",
+    position: "VP of Tech",
     responsibilities: [
       "Guide long-term vision, branding, and impact evaluation",
       "Support and potentially lead both financial and technical meetings",
@@ -62,19 +73,8 @@ export const teamMembers: TeamMember[] = [
   profilePhoto: "/members/russell.png"
   },
   {
-    name: "Gabriel Ginsberg",
-    position: "VP of Tech",
-    responsibilities: [
-      "Lead all technical workshops and blockchain development initiatives",
-      "Support technical needs at events (setup, demos, GitHub)",
-      "Maintain any internal tools or documentation",
-      "Mentor members working on technical projects"
-  ],
-  profilePhoto: "/members/gabriel.png"
-  },
-  {
     name: "Christie Wu",
-    position: "VP of Social Outreach",
+    position: "VP of Brand",
     responsibilities: [
       "Manage all social platforms (Instagram, X, LinkedIn, Website)",
       "Create promotional content and schedule posts",
@@ -84,7 +84,6 @@ export const teamMembers: TeamMember[] = [
   ],
   profilePhoto: "/members/christie.png"
   },
-  
   {
     name: "Osayamen Okungbowa",
     position: "VP of Internal Affairs / Ignite Representative",
