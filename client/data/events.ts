@@ -11,6 +11,16 @@ export interface Event {
 
 export const events: Event[] = [
   {
+    title: "First Meeting of Fall 2026",
+    date: "September 9, 2026",
+    time: "6:30 PM",
+    location: "CDS 262",
+    description: "Come and learn about the club, what we do, and the industry!",
+    url: "https://bublockchain.com",
+    startTimeUtc: "2026-09-09T22:30:00.000Z",
+    callout: "New member friendly", // 6:30 PM EDT = 10:30 PM UTC
+  },
+  {
     title: "Splash 2.0 Club Fair",
     date: "January 24, 2026",
     time: "12:00 PM",
