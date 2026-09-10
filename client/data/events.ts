@@ -17,7 +17,7 @@ export const events: Event[] = [
     location: "CDS B62",
     description: "Come and learn about the club, what we do, and the industry!",
     url: "https://bublockchain.com",
-    startTimeUtc: "2026-10-09T22:30:00.000Z",
+    startTimeUtc: "2026-09-10T22:30:00.000Z",
     callout: "New member friendly", // 6:30 PM EDT = 10:30 PM UTC
   },
   {
