@@ -41,17 +41,6 @@ export const teamMembers: TeamMember[] = [
     profilePhoto: "/members/alvin.png"
   },
   {
-    name: "Ryan Lam",
-    position: "VP of Finance",
-    responsibilities: [
-      "Prepare budget and funding proposals (with SAO and external sponsors)",
-      "Plan semester budgets with the Co-Presidents",
-      "Identify new sponsorship and funding opportunities",
-      "Support the Treasurer on reporting and event cost planning"
-    ],
-    profilePhoto: "/members/ryan.png"
-  },
-  {
     name: "Russell Joarder",
     position: "VP of Technology",
     responsibilities: [
@@ -61,6 +50,17 @@ export const teamMembers: TeamMember[] = [
       "Work with the Director of Technology on technical programming"
     ],
     profilePhoto: "/members/russell.png"
+  },
+  {
+    name: "Ryan Lam",
+    position: "VP of Finance",
+    responsibilities: [
+      "Prepare budget and funding proposals (with SAO and external sponsors)",
+      "Plan semester budgets with the Co-Presidents",
+      "Identify new sponsorship and funding opportunities",
+      "Support the Treasurer on reporting and event cost planning"
+    ],
+    profilePhoto: "/members/ryan.png"
   },
   {
     name: "Timur Zafesov",
@@ -73,9 +73,8 @@ export const teamMembers: TeamMember[] = [
     ],
     profilePhoto: "/members/timur.png"
   },
-
   {
-    name: "Prahlad Temp",
+    name: "Prahlad Khatwani",
     position: "Secretary",
     responsibilities: [
       "Maintain official club roster and attendance",
@@ -84,18 +83,6 @@ export const teamMembers: TeamMember[] = [
       "Ensure members meet active membership requirements"
     ],
     profilePhoto: "/members/prahlad.png"
-  },
-
-  {
-    name: "Patrick Fish",
-    position: "Director of Technology",
-    responsibilities: [
-      "Run hands-on technical workshops and coding sessions",
-      "Support technical needs at events (setup, demos, GitHub)",
-      "Help members get started on technical projects",
-      "Assist the VP of Technology with development initiatives"
-    ],
-    profilePhoto: "/members/patrick.png"
   },
   {
     name: "Justin Li",
@@ -118,6 +105,17 @@ export const teamMembers: TeamMember[] = [
       "Help define club priorities and process improvements"
     ],
     profilePhoto: "/members/ilhan.png"
+  },
+  {
+    name: "Patrick Fish",
+    position: "Director of Technology",
+    responsibilities: [
+      "Run hands-on technical workshops and coding sessions",
+      "Support technical needs at events (setup, demos, GitHub)",
+      "Help members get started on technical projects",
+      "Assist the VP of Technology with development initiatives"
+    ],
+    profilePhoto: "/members/patrick.png"
   },
   {
     name: "Soumya Mehta",
