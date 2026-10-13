@@ -6,7 +6,6 @@ export interface TeamMember {
 }
 
 export const teamMembers: TeamMember[] = [
-  // ── Co-Presidents ──────────────────────────────────────────
   {
     name: "Michael Sun",
     position: "Co-President",
@@ -30,10 +29,9 @@ export const teamMembers: TeamMember[] = [
     profilePhoto: "/members/gabriel.png"
   },
 
-  // ── Vice Presidents ────────────────────────────────────────
   {
     name: "Alvin Sun",
-    position: "VP of Finance / Treasurer",
+    position: "Treasurer",
     responsibilities: [
       "Track expenses, reimbursements, and sponsorship funds",
       "Maintain transparent financial records and submit semester reports",
@@ -76,7 +74,6 @@ export const teamMembers: TeamMember[] = [
     profilePhoto: "/members/timur.png"
   },
 
-  // ── Secretary ──────────────────────────────────────────────
   {
     name: "Prahlad Temp",
     position: "Secretary",
@@ -89,7 +86,6 @@ export const teamMembers: TeamMember[] = [
     profilePhoto: "/members/prahlad.png"
   },
 
-  // ── Directors ──────────────────────────────────────────────
   {
     name: "Patrick Fish",
     position: "Director of Technology",
